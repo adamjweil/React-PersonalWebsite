@@ -7,7 +7,7 @@ class Navigation extends React.Component {
       <header>
         <nav className="navbar navbar-light bg-dark">
           <a className="navbar-brand" href="/">
-            <img src="https://s3.amazonaws.com/aw-personal-website-images/PW_Logo.png" width="40" height="40" class="d-inline-block align-top" alt="" />
+            <img src="https://s3.amazonaws.com/aw-personal-website-images/Logo_v2.png" width="40" height="40" class="d-inline-block align-top" alt="" />
           </a>
           <ul className="nav nav-pills justify-content-end">
             <li className="nav-item">
