@@ -1,26 +1,13 @@
-.homePhoto {
-  display: inline-block;
-  position: absolute;
-  left: 50px;
-  float: left;
-  width: 25%;
-  margin-top: 5%;
-  border: 1px solid grey;
-}
 .avatar img {
-  /* display: block; */
   margin: auto;
   border-radius: 5px;
-}
-.home {
-  background: #293f50;
-  color: #888;
 }
 .profile-view {
   padding: 10px;
   border: 2px solid #d9d9db;
   background: #eaeaed;
   min-width: 425px;
+  margin-top: 20px;
 }
 .profile-view button {
   align-items: center;
@@ -28,13 +15,13 @@
 }
 .container-fluid {
   background-color: #dee0e2;
+  height: 100vh;
 }
-.linkedin-github-links button {
+.linkedin-github-links a {
   border-width: 3px;
+  height: 32px;
   margin-right: 10px;
-  height: 30px;
-  /* font-size: 10px; */
-  font-weight: 900;
+  font-weight: 600;
 }
 .linkedin-github-links {
   margin-top: 10px;
@@ -42,19 +29,66 @@
 }
 .linkedin-github-links img {
   margin-top: -5px;
-  /* margin-right: 10px; */
 }
-.resume-show button {
+.resume button {
+  margin-top: 5px;
   margin-left: 10px;
-  border-width: 3px;
-  /* font-size: 10px; */
+  border-width: 0px;
+  border-radius: 10px;
+  height: 35px;
   font-weight: 900;
+  opacity: .8;
 }
 .email {
   margin-top: 10px;
 }
-.email-label {
-  height: 20px;
-  width: 70px;
-  font-size: 12px;
+.emailbadge {
+  opacity: .6;
+  height: 25px;
+  padding: .3em .7em .3em;
+  margin-top: 10px;
+}
+.email h5 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.email a {
+  font-size: 16px;
+  color: 	#778899;
+}
+.email span img {
+  margin-top: -3px;
+  margin-right: 3px;
+}
+.resumebadge {
+  margin-top: 10px;
+  height: 25px;
+  opacity: .6;
+  padding: .3em .7em .3em;
+}
+.resume h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.profile-text {
+  /* height:400px; */
+  /* display: inline-block;
+  float: none; */
+  border: 2px solid #d9d9db;
+  background: #eaeaed;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.profile-text p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #f5f5f5;
+  display: block;
 }
