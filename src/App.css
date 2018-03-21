@@ -5,12 +5,56 @@
   float: left;
   width: 25%;
   margin-top: 5%;
-  
   border: 1px solid grey;
 }
-.homePhoto img {
-  max-height: 350px;
-  width: 90%;
+.avatar img {
+  /* display: block; */
+  margin: auto;
   border-radius: 5px;
-  border: 1px solid grey;
+}
+.home {
+  background: #293f50;
+  color: #888;
+}
+.profile-view {
+  padding: 10px;
+  border: 2px solid #d9d9db;
+  background: #eaeaed;
+  min-width: 425px;
+}
+.profile-view button {
+  align-items: center;
+  justify-content: center;
+}
+.container-fluid {
+  background-color: #dee0e2;
+}
+.linkedin-github-links button {
+  border-width: 3px;
+  margin-right: 10px;
+  height: 30px;
+  /* font-size: 10px; */
+  font-weight: 900;
+}
+.linkedin-github-links {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.linkedin-github-links img {
+  margin-top: -5px;
+  /* margin-right: 10px; */
+}
+.resume-show button {
+  margin-left: 10px;
+  border-width: 3px;
+  /* font-size: 10px; */
+  font-weight: 900;
+}
+.email {
+  margin-top: 10px;
+}
+.email-label {
+  height: 20px;
+  width: 70px;
+  font-size: 12px;
 }

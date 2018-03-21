@@ -5,7 +5,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <header>
-        <nav className="navbar navbar-dark bg-dark">
+        <nav className="navbar navbar-light bg-dark">
           <a className="navbar-brand" href="/">
             <img src="https://s3.amazonaws.com/aw-personal-website-images/PW_Logo.png" width="40" height="40" class="d-inline-block align-top" alt="" />
           </a>
