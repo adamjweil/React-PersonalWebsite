@@ -171,9 +171,9 @@
   margin-left: 30px;
 }
 .project-main {
-  width: 700px;
   display: inline-block;
   margin-left: 200px;
-  /* position: relative; */
-  /* float: left; */
+}
+.proj-desc-title {
+  background: green;
 }
