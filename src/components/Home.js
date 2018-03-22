@@ -30,10 +30,9 @@ this.setState(prevState => ({
 render() {
   return(
       <div className="container-fluid">
-        <div className="row justify-content-md-center">
-          <div className="profile-view col-md-4">
-
-            <div className="avatar row">
+        <div className="profile-row">
+          <div className="profile-view">
+            <div className="avatar-row">
               <img src="https://user-images.githubusercontent.com/25589910/36649262-c4f14e38-1a69-11e8-8722-002b648ea184.jpg" width="360px" height="300px">
               </img>
             </div>
@@ -43,6 +42,7 @@ render() {
                 <img src="https://s3.amazonaws.com/aw-personal-website-images/linkedin.png" width="25px" height="25px" />
                 &nbsp;&nbsp;LinkedIn
               </a>
+              
               <a href="https://github.com/adamjweil" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true">
                 <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="25px" height="23px" />
                 &nbsp;&nbsp;GitHub&nbsp;
@@ -72,10 +72,10 @@ render() {
 
           </div>
 
-          <div className="profile-text col-md-6">
+          <div className="profile-text">
             <div className="row">
-              <p className="lead">
-                Adam Weil loves a challenge and excels at bringing a diverse array of skills to each situation.
+              <p className="">
+                Adam Weil loves a challenge and excels at bringing a diverse array of skills to each situation. Driven by a strong entrepenurial personality, Adam
               </p>
             </div>
             <div className="row">
@@ -85,10 +85,15 @@ render() {
             </div>
             <div className="row">
               <p>
-                Adam is looking for opportunities to capitalize on his experience in finance and technology, whether that be as a member of a growing start-up, or in a more mature established business. Adam brings both strong technical and interpersonal skills, and  whatever environment he
+                Adam is looking for opportunities to capitalize on his experience in finance and passion for technology, whether that be as a member of a growing start-up, or in a more mature established business. Adam brings both strong technical and interpersonal skills into whatever environment he find himself in.
               </p>
             </div>
+          </div>
 
+          <div className="profile-interests">
+            <p>
+              In addition to his passion and involvement in the tech community, Adam actively participates in a number of other pursuits. He is a certified Chartered Financial Analyst, and has volunteered his time in support of certain CFA Program activities. He maintains a very strong relationships with his High School alma mater, Carrabassett Valley Academy, and is an active Investment Committee member of schools endowment. In his liesure time he enjoys traveling, playing golf, snowboarding, water sports, and spending time friends and family.
+            </p>
           </div>
           <div className="resume col-md-12">
             <div className="row">
