@@ -6,6 +6,7 @@
   padding: 10px;
   border: 2px solid #d9d9db;
   background: #eaeaed;
+  /* background: #fff; */
   min-width: 425px;
   margin-top: 20px;
 }
@@ -15,6 +16,7 @@
 }
 .container-fluid {
   background-color: #dee0e2;
+  /* background-color: #fff; */
   height: 100vh;
 }
 .linkedin-github-links a {
@@ -91,4 +93,15 @@
   height: 60px;
   background-color: #f5f5f5;
   display: block;
+}
+.project-navigation {
+  /* width: 50px; */
+  /* height: 100vh; */
+  /* background-color: #eaeaed;
+  color: grey; */
+}
+.project-navigation button {
+  /* width: 100%; */
+  /* margin-bottom: 5px;
+  border-width: 3px; */
 }

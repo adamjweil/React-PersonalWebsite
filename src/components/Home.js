@@ -29,17 +29,10 @@ this.setState(prevState => ({
 
 render() {
   return(
-
-
       <div className="container-fluid">
-
-
         <div className="row justify-content-md-center">
-
           <div className="profile-view col-md-4">
-            <div className="name row justify-content-md-center">
 
-            </div>
             <div className="avatar row">
               <img src="https://user-images.githubusercontent.com/25589910/36649262-c4f14e38-1a69-11e8-8722-002b648ea184.jpg" width="360px" height="300px">
               </img>
@@ -76,6 +69,7 @@ render() {
                   Download (PDF)
                 </button>
             </div>
+
           </div>
 
           <div className="profile-text col-md-6">
@@ -101,11 +95,9 @@ render() {
               { this.state.showResume ? <Resume /> : null }
             </div>
           </div>
+
         </div>
       </div>
-
-
-
     );
   }
 }
