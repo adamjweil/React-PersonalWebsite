@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 // import Button from 'react-bootstrap/lib/Button';
 // import Button from 'react-bootstrap/lib/Button';
 // import { Label } from 'react-bootstrap/lib/Label';
-import { Label } from 'reactstrap';
+import { Label, Button } from 'reactstrap';
 
 import Footer from './Footer';
 import Resume from './Resume';
@@ -42,7 +42,7 @@ render() {
                 <img src="https://s3.amazonaws.com/aw-personal-website-images/linkedin.png" width="25px" height="25px" />
                 &nbsp;&nbsp;LinkedIn
               </a>
-              
+
               <a href="https://github.com/adamjweil" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true">
                 <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="25px" height="23px" />
                 &nbsp;&nbsp;GitHub&nbsp;
@@ -62,14 +62,16 @@ render() {
                 <img src="https://s3.amazonaws.com/aw-personal-website-images/resume_logo1.png" width="18px" height="18px" />
                 &nbsp;Résumé:&nbsp;
               </span></h5>
-                <button onClick={this.handleToggleResume} className="btn btn-sm btn-outline-info">
-                  { this.state.showResume ? "Hide" : "Show" }
-                </button>
-                <button href="https://github.com/adamjweil/PersonalWebsite/files/1756864/Resume_AdamWeil.pdf" download="https://github.com/adamjweil/PersonalWebsite/files/1756864/Resume_AdamWeil.pdf" className="btn btn-sm btn-outline-info">
-                  Download (PDF)
-                </button>
-            </div>
 
+              <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button">
+                  { this.state.showResume ? "Hide" : "Show" }
+              </button>
+
+              <a className="btn btn-link info" href="https://github.com/adamjweil/PersonalWebsite/files/1756864/Resume_AdamWeil.pdf" download >
+                  Download (PDF)
+              </a>
+
+            </div>
           </div>
 
           <div className="profile-text">
@@ -95,7 +97,8 @@ render() {
               In addition to his passion and involvement in the tech community, Adam actively participates in a number of other pursuits. He is a certified Chartered Financial Analyst, and has volunteered his time in support of certain CFA Program activities. He maintains a very strong relationships with his High School alma mater, Carrabassett Valley Academy, and is an active Investment Committee member of schools endowment. In his liesure time he enjoys traveling, playing golf, snowboarding, water sports, and spending time friends and family.
             </p>
           </div>
-          <div className="resume col-md-12">
+
+          <div className="resume-view">
             <div className="row">
               { this.state.showResume ? <Resume /> : null }
             </div>
