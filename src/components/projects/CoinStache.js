@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-// import Button from 'react-bootstrap/lib/Button';
+import { Panel, PanelGroup, Accordion } from 'react-bootstrap';
+import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button } from 'reactstrap';
 
 class CoinStache extends Component {
   constructor() {
@@ -9,51 +10,73 @@ class CoinStache extends Component {
 
 render() {
   return(
-    <div className="projectOverview">
-      <div className="projectName">
-        <h2>CoinStache</h2>
-      </div>
-      <div className="projectTitle">
-        
-      </div>
+      <Container>
+        <Row>
+          <Col md="12" style={{textAlign: 'center'}}>
+            <h1>Coin'Stache<h5>Cryptocurrency Made Easy</h5></h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col md="12">
+           <Card style={{borderColor: '#DFDFE1'}}>
+             <CardHeader style={{ backgroundColor: '#d9edf7' }}>DESCRIPTION</CardHeader>
+             <CardBlock>
+               <CardText>Brings all CryptoCurrency related news, market-data & other user-generated content together into one easy-to-use mobile application. Users can buy/sell Bitcoin, Ethereum, and Litecoin through their comprehensive Coin’Stache wallet, as well as easily transfer balances to one another, in a similar fashion to Venmo.</CardText>
+             </CardBlock>
+           </Card>
+         </Col>
+       </Row>
 
-    <div className="projectDescription">
-      <h3>DESCRIPTION</h3>
-      <p>Brings all CryptoCurrency related news, market-data & other user-generated content together into one easy-to-use mobile application. Users can buy/sell Bitcoin, Ethereum, and Litecoin through their comprehensive Coin’Stache wallet, as well as easily transfer balances to one another, in a similar fashion to Venmo.</p>
+       <Row>
+         <Col md="12" style={{marginTop: "15px", marginBottom: '20px'}}>
+         <Card style={{borderColor: '#DFDFE1'}}>
+           <CardHeader style={{ backgroundColor: '#d9edf7', height: '40px'}}>
+             TECH STACK
+           </CardHeader>
+           <CardBlock>
+             <Row>
+               <Col md="6">
+                 <Card body>
+                   <CardTitle>Front End</CardTitle>
+                   <CardText>This mobile application was developed using a React Native front-end framework. The main purpose behind this decision was to have the ability to run the application across multiple different devices without having to alter the code base significantly.</CardText>
+                 </Card>
+               </Col>
+               <Col md="6">
+                 <Card body>
+                   <CardTitle>Back End</CardTitle>
+                   <CardText>This application is supported with a Ruby On Rails back-end. With most of the time intensive aspects of the development being consumed in our fron-end, we needed a back-end that would allow for rapid development and scalability.</CardText>
+                 </Card>
+               </Col>
+             </Row>
+               <Row>
+                 <Col md={{size: 7, offset: 2}} style={{marginTop: "15px"}}>
+                   <Card body>
+                     <CardTitle>Frameworks</CardTitle>
+                     <CardText>NPM, Webpack, Yarn</CardText>
+                   </Card>
+                 </Col>
+               </Row>
 
-      <div className="techStack">
-        <h3>TECH STACK</h3>
-        <div className="frontEnd">
-          <div className="techTitles">
-            <h4>FRONT END  <i className="glyphicon glyphicon-chevron-right"></i></h4>
-          </div>
-          <div className="techDetails">
-            <p>This mobile application was developed using a React Native front-end framework. The main purpose behind this decision was to have the ability to run the application across multiple different devices without having to alter the code base significantly. </p>
-          </div>
-        </div>
+               <Row style={{marginTop: '15px'}}>
+                 <Col md={{size: 3, offset: 1}}>
+                   <Card body className="text-center">
+                    <CardTitle>GitHub</CardTitle>
 
-        <div className="frontEnd">
-          <div className="techTitles">
-            <h4>BACK END  <i className="glyphicon glyphicon-chevron-right"></i></h4>
-          </div>
-          <div className="techDetails">
-            <p>This application is supported with a Ruby On Rails back-end. With most of the time intensive aspects of the development being consumed in our fron-end, we needed a back-end that would allow for rapid development and scalability.</p>
-          </div>
-        </div>
-
-        <div className="frontEnd">
-          <div className="techTitlesLong">
-            <h4>FRAMEWORKS  <i className="glyphicon glyphicon-chevron-right"></i></h4>
-          </div>
-          <div className="techDetails">
-            <p>NPM, Webpack, Yarn </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-</div>
-
+                    <Button>View Repo!</Button>
+                  </Card>
+                 </Col>
+                 <Col md={{size: 3, offset: 3}}>
+                   <Card body className="text-center">
+                    <CardTitle>Heroku</CardTitle>
+                    <Button>Visit Site!</Button>
+                  </Card>
+                 </Col>
+               </Row>
+         </CardBlock>
+       </Card>
+      </Col>
+    </Row>
+   </Container>
     );
   }
 }
