@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { Panel, PanelGroup, Accordion } from 'react-bootstrap';
 import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, CardColumns, CardSubtitle, CardBody } from 'reactstrap';
 
+import CoinStacheCarousal from './carousels/CoinStacheCarousal';
+
 class CoinStache extends Component {
   constructor() {
     super();
@@ -79,6 +81,11 @@ render() {
 
              </CardBlock>
            </Card>
+           <Row style={{marginTop: "10px"}}>
+             <Col md={{size: 10, offset: 1}}>
+               <CoinStacheCarousal />
+             </Col>
+           </Row>
 
          </Col>
        </Row>

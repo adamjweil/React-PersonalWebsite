@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Col, Row } from 'reactstrap';
 
-import CoinStacheCarousal from './projects/CoinStacheCarousal';
 import CoinStache from './projects/CoinStache';
 import EatReview from './projects/EatReview';
 import InstaClone from './projects/InstaClone';
