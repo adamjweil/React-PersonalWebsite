@@ -158,7 +158,9 @@
   display: inline-block;
   border-right: 2px solid #DFDFE1;
   left: 0;
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  padding-bottom: 200px;
   /* margin-top: 10px; */
   background-color: #F4F4F4;
 }
@@ -176,4 +178,9 @@
 }
 .proj-desc-title {
   background: green;
+}
+.github-heroku-buttons a {
+  /* width: 220px; */
+  /* display: inline-block; */
+  /* float: left; */
 }
