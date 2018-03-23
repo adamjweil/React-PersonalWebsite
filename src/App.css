@@ -184,3 +184,16 @@
   /* display: inline-block; */
   /* float: left; */
 }
+.carouselContainer {
+  /* background: #dee0e2; */
+  background: #F4F4F4;
+  height: 550px;
+  max-width: 100%;
+  /* border-radius: 50px; */
+}
+.coin img {
+  margin-left: 32%;
+  /* margin-right: 40%; */
+  height: 430px;
+  /* max-width: 100%; */
+}
