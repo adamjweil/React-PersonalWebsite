@@ -24,7 +24,13 @@ render() {
              </CardHeader>
              <CardBlock>
                <CardText>
-                The simple web app provides an easy way to scrape websites for content located within {`<h1>, <h2>, <h3>, <h4>, and <p>`}  tags, as well links and photos. On the Home Page you can see the ten most recently scraped URLs by anyone (using this app, obviously). Below the recently scraped URLs section, there is an input field where you can enter the URL that you wish to scrape.  A list of the URLs that you've scraped can easily be accessed by navigating to the 'Hisory' page. This data is not stored in our database, so deleting your cookies will erase your scraping history. eaThis information is not stored in a database, so you c You can easily access your search history by navigating to the 'History' page.  After submitting a URL, you'll be redirected to a page displaying an organized few of all the scraped content, links, and photos. If the page being scraped has a large amount of content, you can use the 'Quick Links' section on the top left of the results page to navigate the data more easily and effiently.
+                This simple web app provides an easy way to scrape websites for content located within {`<h1>, <h2>, <h3>, <h4>, and <p>`} tags, as well as links and photos. On the Home Page you can see the ten most recently scraped URLs by anyone (using this app, obviously). Below the recently scraped section there is an input field where you can enter the URL that you wish to scrape
+                <br />
+                <br />
+                Upon submission you'll be redirected to the results page, which displays all of the scraped content (including links and photos) in an organized, user-friendly way. If the page being scraped has a large amount of content, you can use the 'Quick Links' section on the top left of the results page to navigate the data more easily and effiently
+                <br />
+                <br />
+                When entering a URL to scrape, the search is tagged with your Session ID. This allows you to view previously scraped URLs without ever needing to create a account. You can access this data by navigating to the 'History' page. Deleting your cookies will reset your Session ID, thereby clearing all previously scraped URLs
                </CardText>
              </CardBlock>
            </Card>
@@ -41,7 +47,7 @@ render() {
                <Row>
                  <Col md={{size: 10, offset: 1}}>
                    <Card body>
-                     <CardTitle>Front End</CardTitle>
+                     <CardTitle>Front End:</CardTitle>
                      <CardText>
                         This app was built using Ruby on Rails, and styled with Bootstrap. A couple Ruby gems in particular helped make this scraping algorithm much more dynamic and seamless. Nokogiri, and HTTParty
                      </CardText>
@@ -55,7 +61,7 @@ render() {
                    <Card body>
                      <CardTitle>Included:</CardTitle>
                      <CardText>
-                       HTTParty, Nokogiri
+                       HTTParty, Nokogiri, Ruby, Rails, HTML, CSS, Bootstrap, Sessions, RESTful Routes, PostgreSQL, ActiveRecord
                      </CardText>
                    </Card>
                  </Col>
