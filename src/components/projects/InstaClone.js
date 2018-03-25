@@ -39,7 +39,7 @@ render() {
              </CardHeader>
              <CardBlock>
                <Row>
-                 <Col md="6">
+                 <Col md={{size: 10, offset: 1}}>
                    <Card body>
                      <CardTitle>Front End</CardTitle>
                      <CardText>
@@ -47,22 +47,15 @@ render() {
                      </CardText>
                    </Card>
                  </Col>
-                 <Col md="6">
-                   <Card body>
-                     <CardTitle>Back End</CardTitle>
-                     <CardText>
 
-                     </CardText>
-                   </Card>
-                 </Col>
                </Row>
 
                <Row>
                  <Col md={{size: 6, offset: 0}} style={{marginTop: "15px"}}>
                    <Card body>
-                     <CardTitle>Database</CardTitle>
+                     <CardTitle>Included:</CardTitle>
                      <CardText>
-
+                       React Router (BrowserRouter, Route, Switch, NavLink), JQuery, Handle Form Input/Submit, Fully 'Componentized', React Bootstrap Integration 
                      </CardText>
                    </Card>
                  </Col>
