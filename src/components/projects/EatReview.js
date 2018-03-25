@@ -24,7 +24,7 @@ render() {
              </CardHeader>
              <CardBlock>
                <CardText>
-                 Web application built for posting new and exciting restaurants. Users can create an account, post a new restaurant with relevant details (provided that the restaurant is not already on the app), read and post reviews for these various eateries, and manage their account through the easy-to-use profile page.
+                 Web application built for posting new and exciting restaurants. Users can create an account, post a new restaurant with relevant details (provided that the restaurant is not already on the app), read and post reviews for these various eateries, and manage their account through the easy-to-use profile page
                </CardText>
              </CardBlock>
            </Card>
@@ -41,17 +41,17 @@ render() {
                <Row>
                  <Col md="6">
                    <Card body>
-                     <CardTitle>Front End</CardTitle>
+                     <CardTitle>Front End:</CardTitle>
                      <CardText>
-                        This web application was built using a Ruby On Rails framework. To create the dynamic Login and Register buttons on the Navbar, I needed to integrate some Javascript into the code base.
+                        This web application was built using a Rails framework, therefore most of the code base is in Ruby. I did also use Coffeescript & Javascript to make a couple features more responsive. I did utilize both  To create the dynamic Login and Register buttons on the Navbar, I needed to integrate some Javascript into the code base as well
                      </CardText>
                    </Card>
                  </Col>
                  <Col md="6">
                    <Card body>
-                     <CardTitle>Back End</CardTitle>
+                     <CardTitle>Back End:</CardTitle>
                      <CardText>
-                       The Back End of this application is built in Ruby, and the data it stores is managed with a PostgreSQL database.
+                       To store the information that this application serves, I set up a relational PostgreSQL database. The data is organized into three primary resources: Users, Restaurants, and Reviews. Each of these represents a table in the database, and are structured to accomodate the various types relationships between entities
                      </CardText>
                    </Card>
                  </Col>
@@ -60,9 +60,9 @@ render() {
                <Row>
                  <Col md={{size: 6, offset: 0}} style={{marginTop: "15px"}}>
                    <Card body>
-                     <CardTitle>Database</CardTitle>
+                     <CardTitle>Included:</CardTitle>
                      <CardText>
-                       PostgresSQL, ActiveRecord
+                       Ruby, Javascript, Rails, PostgreSQL, ActiveRecord, RESTful Routing, HTML, CSS, Bootstrap, Coffeescript, BCrypt, JQuery, Faker 'Gem'
                      </CardText>
                    </Card>
                  </Col>
