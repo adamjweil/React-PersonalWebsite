@@ -1,11 +1,31 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
 import { Panel, PanelGroup, Accordion } from 'react-bootstrap';
-import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button } from 'reactstrap';
+import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, Collapse, Badge, TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
+import classnames from 'classnames';
+
+import InstaCloneCarousal from './carousels/InstaCloneCarousal';
 
 class InstaClone extends Component {
   constructor() {
     super();
+    this.state = {
+      collapse: true,
+      activeTab: '1'
+    };
+    this.toggleTab = this.toggleTab.bind(this);
+    this.toggleDescription = this.toggleDescription.bind(this);
+  }
+  toggleDescription() {
+    this.setState({
+      collapse: !this.state.collapse
+    });
+  }
+  toggleTab(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab
+      });
+    }
   }
 
 render() {
@@ -16,11 +36,12 @@ render() {
             <h1>React-InstaClone<h5>Share Your Photos!</h5></h1>
           </Col>
         </Row>
+
         <Row>
           <Col md="12">
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#d9edf7' }}>
-               DESCRIPTION
+             <CardHeader style={{ backgroundColor: '#d9edf7', height: '50px' }}>
+               Description
              </CardHeader>
              <CardBlock>
                <CardText>

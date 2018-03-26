@@ -6,6 +6,7 @@ import CoinStache from './projects/CoinStache';
 import EatReview from './projects/EatReview';
 import InstaClone from './projects/InstaClone';
 import WebScraper from './projects/WebScraper';
+import AltSetup from './projects/AltSetup';
 
 class Projects extends Component {
   constructor() {
@@ -17,6 +18,7 @@ class Projects extends Component {
     this.toggleEatProject = this.toggleEatProject.bind(this);
     this.toggleInstaProject = this.toggleInstaProject.bind(this);
     this.toggleScrapeProject = this.toggleScrapeProject.bind(this);
+    this.toggleAltSetup = this.toggleAltSetup.bind(this);
   }
 toggleCoinProject = e =>
   this.setState({ activeProject: 0 });
@@ -26,6 +28,8 @@ toggleInstaProject = e =>
   this.setState({ activeProject: 2 });
 toggleScrapeProject = e =>
   this.setState({ activeProject: 3 });
+toggleAltSetup = e =>
+  this.setState({ activeProject: 4 });
 
 render() {
   return(
@@ -63,13 +67,22 @@ render() {
               </button>
             </div>
 
+            <div className="project-links row">
+              <button type="button"
+                onClick={this.toggleAltSetup}
+                className={`btn btn-dark + ${this.state.activeProject === 4 ? "active" : ""}`}>
+                Alt Setup
+              </button>
+            </div>
+
           </div>
       </div>
       <div className="project-main">
         { this.state.activeProject === 0 ?  <CoinStache /> :
           this.state.activeProject === 1 ?  <EatReview /> :
           this.state.activeProject === 2 ?  <InstaClone /> :
-          this.state.activeProject === 3 ?  <WebScraper /> : "Error"
+          this.state.activeProject === 3 ?  <WebScraper /> :
+          this.state.activeProject === 4 ?  <AltSetup /> : "Error"
            }
 
       </div>
