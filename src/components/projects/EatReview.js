@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Panel, PanelGroup, Accordion } from 'react-bootstrap';
-import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button } from 'reactstrap';
+import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, Collapse } from 'reactstrap';
 
 class EatReview extends Component {
   constructor() {
     super();
+    this.state = {
+      collapse: true
+    };
+    this.toggleDescription = this.toggleDescription.bind(this);
+  }
+  toggleDescription() {
+    this.setState({
+      collapse: !this.state.collapse
+    });
   }
 
 render() {
@@ -24,6 +33,7 @@ render() {
              </CardHeader>
              <CardBlock>
                <CardText>
+                 
                  Web application built for posting new and exciting restaurants. Users can create an account, post a new restaurant with relevant details (provided that the restaurant is not already on the app), read and post reviews for these various eateries, and manage their account through the easy-to-use profile page
                </CardText>
              </CardBlock>
@@ -43,7 +53,7 @@ render() {
                    <Card body>
                      <CardTitle>Front End:</CardTitle>
                      <CardText>
-                        This web application was built using a Rails framework, therefore most of the code base is in Ruby. I did also use Coffeescript & Javascript to make a couple features more responsive. I did utilize both  To create the dynamic Login and Register buttons on the Navbar, I needed to integrate some Javascript into the code base as well
+                        This web application was built using a Rails framework, therefore most of the code base is in Ruby. I also used Coffeescript & Javascript to make a couple of features more responsive. Both were utilized to create the dynamic Login and Register buttons on the Navbar, for example
                      </CardText>
                    </Card>
                  </Col>
