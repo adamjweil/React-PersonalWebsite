@@ -28,12 +28,12 @@ render() {
         <Row>
           <Col md="12">
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#d9edf7' }}>
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
                DESCRIPTION
              </CardHeader>
              <CardBlock>
                <CardText>
-                 
+
                  Web application built for posting new and exciting restaurants. Users can create an account, post a new restaurant with relevant details (provided that the restaurant is not already on the app), read and post reviews for these various eateries, and manage their account through the easy-to-use profile page
                </CardText>
              </CardBlock>
@@ -44,7 +44,7 @@ render() {
        <Row>
          <Col md="12" style={{marginTop: "15px", marginBottom: '20px'}}>
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#d9edf7', height: '40px'}}>
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
                TECH STACK
              </CardHeader>
              <CardBlock>

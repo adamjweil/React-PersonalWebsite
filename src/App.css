@@ -165,9 +165,9 @@
   background-color: #F4F4F4;
 }
 .project-links button {
-  opacity: .7;
+  /* opacity: .9; */
   width: 150px;
-  height: 35px;
+  height: 40px;
   border-radius: 5px;
   margin-bottom: 10px;
   margin-left: 30px;

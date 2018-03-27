@@ -9,7 +9,7 @@ class InstaClone extends Component {
   constructor() {
     super();
     this.state = {
-      collapse: true,
+      collapse: false,
       activeTab: '1'
     };
     this.toggleTab = this.toggleTab.bind(this);
@@ -40,23 +40,42 @@ render() {
         <Row>
           <Col md="12">
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#d9edf7', height: '50px' }}>
-               Description
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
+               DESCRIPTION
+               <Button
+                 style={{opacity: '.7', marginLeft: '20px', borderRadius: '5px', fontSize: '12px'}}
+                 color="success"
+                 size="sm"
+                 onClick={this.toggleDescription}>
+                 { this.state.collapse ? "Hide Full" : "Show Full" }
+               </Button>
              </CardHeader>
              <CardBlock>
-               <CardText>
-                 Uploading photos traditionally requires multiple layers of communication between a client and server. File upload, form submission, and encoding the image into an object that can be more easily stored (Base64, for example). These processes can be time consuming, so there is generally a lag between the time you upload a photo, and when the photo is viewable on a browser
-                 <br />
-                 <br />
-                 React-InstaClone is a web application that I built to simulate the 'Instagram' experience (uploading and sharing photos), in a web browser.
-                 I chose to build this app in React to mitigate some of these issues highlighted above, and make uploading images as fast and seamless as possible. I eliminated much of the traditional friction involved with uploading photos through the use of functional components, pure components, storing all data by way of application 'State', 'Props', and the nature of React's one-way data flow
-                 <br />
-                 <br />
-                 The landing page displays the most recently posted photos, along with their associated blurbs, and are tagged with the username and timestamp of the poster. Anybody can add an image to the app's photo stream via the form on the bottom of the page. Simply choose the photo you wish to upload, enter a brief description, and type in your username. After selecting a photo in the file input field, you will immediately notice a preview of the image just to the right of the form. Upon submitting this form, the photo stream will update instantly, without the page ever having to reload. This showcases some of the power of using React
-                 <br />
-                 <br />
-                 Clicking on 'Profile' in the navigation menu will direct you to my specific profile page. You will see my Avatar and a brief bio on the top of the page. Directly below there is another 'New Photo' form, similar to the one on the Homepage. Notice that this form has no field to enter a username. That is because any photo uploaded from my profile page will be automatically tagged with my username (@AdamJWeil). Photos uploaded from my profile will instantly render on my personal page, and will also be added to the top of the stream located on the Homepage
-               </CardText>
+               <Collapse isOpen={this.state.collapse}>
+                 <CardText>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     Uploading photos traditionally requires multiple layers of communication between a client and server. File upload, form submission, and encoding the image into an object that can be more easily stored (Base64, for example). These processes can be time consuming, so there is generally a lag between the time you upload a photo, and when the photo is viewable on a browser
+                   </Row>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     React-InstaClone is a web application that I built to simulate the 'Instagram' experience (uploading and sharing photos), in a web browser.
+                     I chose to build this app in React to mitigate some of these issues highlighted above, and make uploading images as fast and seamless as possible. I eliminated much of the traditional friction involved with uploading photos through the use of functional components, pure components, storing all data by way of application 'State', 'Props', and the nature of React's one-way data flow
+                   </Row>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     The landing page displays the most recently posted photos, along with their associated blurbs, and are tagged with the username and timestamp of the poster. Anybody can add an image to the app's photo stream via the form on the bottom of the page. Simply choose the photo you wish to upload, enter a brief description, and type in your username. After selecting a photo in the file input field, you will immediately notice a preview of the image just to the right of the form. Upon submitting this form, the photo stream will update instantly, without the page ever having to reload. This showcases some of the power of using React
+                   </Row>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     Clicking on 'Profile' in the navigation menu will direct you to my specific profile page. You will see my Avatar and a brief bio on the top of the page. Directly below there is another 'New Photo' form, similar to the one on the Homepage. Notice that this form has no field to enter a username. That is because any photo uploaded from my profile page will be automatically tagged with my username (@AdamJWeil). Photos uploaded from my profile will instantly render on my personal page, and will also be added to the top of the stream located on the Homepage
+                   </Row>
+                 </CardText>
+               </Collapse>
+               <Collapse isOpen={!this.state.collapse}>
+                 <CardText>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     React-InstaClone is a web application that I built to simulate the 'Instagram' experience (uploading and sharing photos), in a web browser.
+                     I chose to build this app in React to mitigate some of these issues highlighted above, and make uploading images as fast and seamless as possible. I eliminated much of the traditional friction involved with uploading photos through the use of functional components, pure components, storing all data by way of application 'State', 'Props', and the nature of React's one-way data flow
+                   </Row>
+                 </CardText>
+               </Collapse>
              </CardBlock>
            </Card>
          </Col>
@@ -65,7 +84,7 @@ render() {
        <Row>
          <Col md="12" style={{marginTop: "15px", marginBottom: '20px'}}>
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#d9edf7', height: '40px'}}>
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
                TECH STACK
              </CardHeader>
              <CardBlock>
