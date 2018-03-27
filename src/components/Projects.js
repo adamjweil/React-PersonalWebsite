@@ -40,37 +40,42 @@ render() {
           <div className="project-links">
             <div className="project-links row">
               <button type="button"
+                style={{borderWidth: '3px'}}
                 onClick={this.toggleCoinProject}
-                className={`btn btn-dark + ${this.state.activeProject === 0 ? "active" : ""}`}>
+                className={`btn btn-outline-dark + ${this.state.activeProject === 0 ? "active" : ""}`}>
                 Coin'Stache
               </button>
             </div>
             <div className="project-links row">
               <button type="button"
+                style={{borderWidth: '3px'}}
                 onClick={this.toggleEatProject}
-                className={`btn btn-dark + ${this.state.activeProject === 1 ? "active" : ""}`}>
+                className={`btn btn-outline-dark + ${this.state.activeProject === 1 ? "active" : ""}`}>
                 Eat & Review
               </button>
             </div>
             <div className="project-links row">
               <button type="button"
+                style={{borderWidth: '3px'}}
                 onClick={this.toggleInstaProject}
-                className={`btn btn-dark + ${this.state.activeProject === 2 ? "active" : ""}`}>
+                className={`btn btn-outline-dark + ${this.state.activeProject === 2 ? "active" : ""}`}>
                 React-InstaClone
               </button>
             </div>
             <div className="project-links row">
               <button type="button"
+                style={{borderWidth: '3px'}}
                 onClick={this.toggleScrapeProject}
-                className={`btn btn-dark + ${this.state.activeProject === 3 ? "active" : ""}`}>
+                className={`btn btn-outline-dark + ${this.state.activeProject === 3 ? "active" : ""}`}>
                 Page Scraper
               </button>
             </div>
 
             <div className="project-links row">
               <button type="button"
+                style={{borderWidth: '3px'}}
                 onClick={this.toggleAltSetup}
-                className={`btn btn-dark + ${this.state.activeProject === 4 ? "active" : ""}`}>
+                className={`btn btn-outline-dark + ${this.state.activeProject === 4 ? "active" : ""}`}>
                 Alt Setup
               </button>
             </div>
