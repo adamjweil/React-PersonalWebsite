@@ -89,7 +89,7 @@ render() {
              </CardHeader>
              <CardBlock>
                <Row>
-                 <Col md={{size: 10, offset: 1}}>
+                 <Col md={{size: 12, offset: 0}}>
                    <Card body>
                      <CardTitle>Front End:</CardTitle>
                      <CardText>
