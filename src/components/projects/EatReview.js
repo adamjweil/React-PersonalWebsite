@@ -7,7 +7,7 @@ class EatReview extends Component {
   constructor() {
     super();
     this.state = {
-      collapse: true
+      collapse: false
     };
     this.toggleDescription = this.toggleDescription.bind(this);
   }
@@ -30,12 +30,32 @@ render() {
            <Card style={{borderColor: '#DFDFE1'}}>
              <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
                DESCRIPTION
+               <Button
+                 style={{opacity: '.7', marginLeft: '20px', borderRadius: '5px', fontSize: '12px'}}
+                 color="success"
+                 size="sm"
+                 onClick={this.toggleDescription}>
+                 { this.state.collapse ? "Hide Full" : "Show Full" }
+               </Button>
              </CardHeader>
              <CardBlock>
-               <CardText>
-
-                 Web application built for posting new and exciting restaurants. Users can create an account, post a new restaurant with relevant details (provided that the restaurant is not already on the app), read and post reviews for these various eateries, and manage their account through the easy-to-use profile page
-               </CardText>
+               <Collapse isOpen={this.state.collapse}>
+                 <CardText>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     The best way to become more proficient with a certain coding language or framework is to build an application utilizing said language/framework. Rails provides developers with a structured framework for building websites and applications by simplifying and abstracting repetitive tasks. 'DRY' is a common mantra echoed throughout the Ruby community, which stands for Don't Repeat Yourself. Adhering to this idea allows you to write segments of code that can be easily reused. Another important principle of Rails is convention over configuration, which means that as a programmer you can spend less time configuring files as long as you understand and conform to the primary conventions that Rails provides you with.
+                   </Row>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     Web application built for posting new and exciting restaurants. Users can create an account, post a new restaurant with relevant details (provided that the restaurant is not already on the app), read and post reviews for these various eateries, and manage their account through the easy-to-use profile page
+                   </Row>
+                 </CardText>
+               </Collapse>
+               <Collapse isOpen={!this.state.collapse}>
+                 <CardText>
+                   <Row style={{margin: '5px 5px 15px'}}>
+                     Web application built for posting new and exciting restaurants. Users can create an account, post a new restaurant with relevant details (provided that the restaurant is not already on the app), read and post reviews for these various eateries, and manage their account through the easy-to-use profile page
+                   </Row>
+                 </CardText>
+               </Collapse>
              </CardBlock>
            </Card>
          </Col>

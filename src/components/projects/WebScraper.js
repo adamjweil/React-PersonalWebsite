@@ -71,7 +71,7 @@ render() {
              </CardHeader>
              <CardBlock>
                <Row>
-                 <Col md={{size: 10, offset: 1}}>
+                 <Col md={{size: 6, offset: 0}}>
                    <Card body>
                      <CardTitle>Front End:</CardTitle>
                      <CardText>
@@ -80,10 +80,7 @@ render() {
                    </Card>
                  </Col>
 
-               </Row>
-
-               <Row>
-                 <Col md={{size: 6, offset: 0}} style={{marginTop: "15px"}}>
+                 <Col md={{size: 6, offset: 0}} style={{}}>
                    <Card body>
                      <CardTitle>Included:</CardTitle>
                      <CardText>
@@ -91,8 +88,11 @@ render() {
                      </CardText>
                    </Card>
                  </Col>
+               </Row>
 
-                 <Col md={{size: 3, offset: 0}} style={{marginTop: "15px"}}>
+               <Row>
+
+                 <Col md={{size: 3, offset: 3}} style={{marginTop: "15px"}}>
                    <Card body inverse className="github-heroku-buttons text-center" style={{ backgroundColor: '#333', borderColor: '#333'}}>
                     <CardTitle>
                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" />

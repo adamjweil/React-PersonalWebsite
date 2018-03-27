@@ -118,26 +118,30 @@ render() {
                    </Card>
                  </Col>
 
+                 <Col md={{size: 6, offset: 0}} style={{marginTop: "15px"}}>
+                   <Card style={{borderColor: '#DFDFE1'}}>
+                     <CardHeader style={{ backgroundColor: '#17a2b8', color: 'white', fontSize: '18px', opacity: '1', height: '45px' }}>
+                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" />
+                       &nbsp;&nbsp;GitHub Links
+                     </CardHeader>
+                     <CardBlock>
+                       <Row>
+                         <Col md={{size: 6}}>
+                           <a href="https://github.com/adamjweil/CoinStash" target="_blank" className="card-button btn btn-sm btn-success" role="button" aria-disabled="true" style={{marginBottom: "0px", width: "100%", borderRadius: '10px'}}>
+                             Front End Repo
+                           </a>
+                         </Col>
+                         <Col md={{size: 6}}>
+                           <a href="https://github.com/adamjweil/CoinStash-BackEnd" target="_blank" className="btn btn-sm btn-success" role="button" aria-disabled="true" style={{width: "100%", borderRadius: '10px'}}>
+                             Back End Repo
+                           </a>
+                         </Col>
+                       </Row>
 
-
-                 <Col md={{size: 4, offset: 1}} style={{marginTop: "15px"}}>
-                   <Card body inverse className="github-heroku-buttons text-center" style={{ backgroundColor: '#333', borderColor: '#333'}}>
-                    <CardTitle>
-                      <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" />
-                      &nbsp;&nbsp;GitHub
-                    </CardTitle>
-                    <a href="https://github.com/adamjweil/CoinStash" target="_blank" className="card-button btn btn-sm btn-light" role="button" aria-disabled="true" style={{marginBottom: "10px", width: "100%"}}>
-                      Front End&nbsp;
-                    </a>
-                    <a href="https://github.com/adamjweil/CoinStash-BackEnd" target="_blank" className="btn btn-sm btn-light" role="button" aria-disabled="true" style={{width: "100%"}}>
-                      Back-End
-                    </a>
-                  </Card>
+                     </CardBlock>
+                   </Card>
                  </Col>
-
-
                </Row>
-
              </CardBlock>
            </Card>
            <Row style={{marginTop: "10px"}}>
