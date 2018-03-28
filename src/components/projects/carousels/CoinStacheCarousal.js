@@ -8,43 +8,43 @@ const items = [
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_MainPage_Final.png",
     altText: 'Slide 1',
-    caption: 'Test Test',
+    caption: 'View the real-time market prices for BTC, ETH, and LTC. Also take a look at the most recently published articles related to crypto',
     captionHeader: "Main Page"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_Dashboard_Final.png",
     altText: 'Slide 2',
-    caption: 'Dashboard',
-    captionHeader: "Dashboard Header"
+    caption: 'Super user friendly dashboard for navigating the mobile app',
+    captionHeader: "Dashboard"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_BTCtop_Final.png",
     altText: 'Slide 3',
-    caption: 'Market price data and real-time tweets relating to Bitcoin',
-    captionHeader: "Bitcoin Page (Top)"
+    caption: 'Check out the daily, weekly, monthly, and year-to-date changes in crpto prices. Also see what people are saying on twitter',
+    captionHeader: "Crypto Page (Top)"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_BTCbottom_Final.png",
     altText: 'Slide 4',
-    caption: 'Real-time RSS feeds relating to Bitcoin',
-    captionHeader: "Bitcoin Page (Bottom)"
+    caption: 'Curated RSS feed that brings together news from across the entire web. Also notice the Buy and Sell button on the bottom',
+    captionHeader: "Crypto Page (Bottom)"
+  },
+  {
+    src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_BuySell_Final.png",
+    altText: 'Slide 6',
+    caption: 'The Buy and Sell buttons located on the crypto pages direct you here. The page from which you navigated here will dictate the crypto denominated wallet that will be used to buy or sell',
+    captionHeader: "Buying/Selling"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_Wallets_Final.png",
     altText: 'Slide 5',
     caption: 'Shows current balance in USD, BTC, ETH, and LTC wallets, as well as most recent 25 transactions and the associated details',
-    captionHeader: "Wallets Page"
-  },
-  {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_BuySell_Final.png",
-    altText: 'Slide 6',
-    caption: '.....',
-    captionHeader: "Buying/Selling"
+    captionHeader: "Wallets"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Coin_P2P_Final.png",
     altText: 'Slide 7',
-    caption: 'Easily make a transfer using email addresses. No need to know their full Wallet address',
+    caption: 'Easily transfer crypto currency to a friend, with just their email. No need to know their full wallet address',
     captionHeader: "P2P"
   }
 ];
@@ -94,7 +94,7 @@ render() {
             onExited={this.onExited}
             key={item.src}
             >
-            <Row style={{height: '600px'}}>
+            <Row style={{height: '620px'}}>
               <Col md={{size: 5, offset: 4}} sm={{size: 10, offset: 1}} style={{}}>
                 <img src={item.src} alt={item.altText} />
               </Col>
@@ -111,7 +111,7 @@ render() {
     return (
       <Container>
         <Row>
-          <Col md={{size: 10, offset: 1}}>
+          <Col md={{size: 10, offset: 1}} sm={{size: 12}}>
             <div className="photoContainer">
               <Card>
                 <CardHeader

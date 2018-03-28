@@ -7,19 +7,19 @@ const items = [
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Insta_MainPage.png",
     altText: 'Slide 1',
-    caption: 'Main...',
+    caption: 'See an organized stream of recently added photos from all users. You can also read photo descriptions and see the username and timestamp from the upload',
     captionHeader: "Main Page"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Insta_Profile.png",
     altText: 'Slide 2',
-    caption: 'profile....',
+    caption: 'Here is a view of my specific profile. You can see my avatar and a brief bio on top, and below are all the photos that Ive uploaded',
     captionHeader: "Profile Page"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Insta_About2.png",
     altText: 'Slide 3',
-    caption: 'about...',
+    caption: '...',
     captionHeader: "About Page"
   }
 ];
@@ -69,8 +69,8 @@ render() {
             onExited={this.onExited}
             key={item.src}
             >
-            <Row style={{height: '550px'}}>
-              <Col md={{size: 12, offset: 0}} sm={{size: 10, offset: 1}} style={{}}>
+            <Row style={{height: '600px'}}>
+              <Col md={{size: 10, offset: 1}} sm={{size: 12, offset: 0}} style={{}}>
                 <img src={item.src} alt={item.altText} />
               </Col>
             </Row>
