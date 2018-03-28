@@ -21,24 +21,28 @@ class CoinStache extends Component {
 render() {
   return(
       <Container>
+        
         <Row>
           <Col md="12" style={{textAlign: 'center'}}>
             <h1>Coin'Stache<h5>Cryptocurrency Made Easy</h5></h1>
           </Col>
         </Row>
+
         <Row>
           <Col md="12">
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
-               DESCRIPTION
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
+               <img src="https://s3.amazonaws.com/aw-personal-website-images/chat.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
+                DESCRIPTION
                <Button
-                 style={{opacity: '.7', marginLeft: '20px', borderRadius: '5px', fontSize: '12px'}}
+                 style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px'}}
                  color="success"
                  size="sm"
                  onClick={this.toggleDescription}>
                  { this.state.collapse ? "Hide Full" : "Show Full" }
                </Button>
              </CardHeader>
+
              <CardBlock>
                <Collapse isOpen={this.state.collapse}>
                  <CardText>
@@ -79,34 +83,47 @@ render() {
                    </Row>
                  </CardText>
                </Collapse>
+
              </CardBlock>
            </Card>
+
+         </Col>
+       </Row>
+
+       <Row style={{marginTop: "10px"}}>
+         <Col md={{offset: 1}}>
+           <CoinStacheCarousal />
          </Col>
        </Row>
 
        <Row>
          <Col md="12" style={{marginTop: "15px", marginBottom: '20px'}}>
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
-               TECH STACK
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
+               <img src="https://s3.amazonaws.com/aw-personal-website-images/chip.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
+                TECH STACK
              </CardHeader>
              <CardBlock>
                <Row>
                  <Col md="6">
+
                    <Card body>
                      <CardTitle>Front End:</CardTitle>
                      <CardText>
                        This mobile application was developed using a React Native front-end framework. The main purpose behind this decision was to have the ability to run the application across multiple different devices without having to alter the code base significantly
                      </CardText>
                    </Card>
+
                  </Col>
                  <Col md="6">
+
                    <Card body>
                      <CardTitle>Back End:</CardTitle>
                      <CardText>
                        This application is supported with a Ruby On Rails back end. The most time intensive aspect of this development project was consumed with building out our front end, so we chose a back end framework that allowed for rapid development and scalability
                      </CardText>
                    </Card>
+
                  </Col>
                </Row>
 
@@ -119,40 +136,36 @@ render() {
                  </Col>
 
                  <Col md={{size: 6, offset: 0}} style={{marginTop: "15px"}}>
+
                    <Card style={{borderColor: '#DFDFE1'}}>
-                     <CardHeader style={{ backgroundColor: '#17a2b8', color: 'white', fontSize: '18px', opacity: '1', height: '45px' }}>
-                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" />
-                       &nbsp;&nbsp;GitHub Links
+                     <CardHeader style={{ backgroundColor: '#17a2b8', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '1'}}>
+                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" style={{ marginRight: '10px' }} />
+                       GitHub
                      </CardHeader>
+
                      <CardBlock>
                        <Row>
                          <Col md={{size: 6}}>
                            <a href="https://github.com/adamjweil/CoinStash" target="_blank" className="card-button btn btn-sm btn-success" role="button" aria-disabled="true" style={{marginBottom: "0px", width: "100%", borderRadius: '10px'}}>
-                             Front End Repo
+                             Front End
                            </a>
                          </Col>
                          <Col md={{size: 6}}>
                            <a href="https://github.com/adamjweil/CoinStash-BackEnd" target="_blank" className="btn btn-sm btn-success" role="button" aria-disabled="true" style={{width: "100%", borderRadius: '10px'}}>
-                             Back End Repo
+                             Back End
                            </a>
                          </Col>
                        </Row>
-
                      </CardBlock>
+
                    </Card>
                  </Col>
                </Row>
              </CardBlock>
            </Card>
-           <Row style={{marginTop: "10px"}}>
-             <Col md={{size: 10, offset: 1}}>
-               <CoinStacheCarousal />
-             </Col>
-           </Row>
-
          </Col>
        </Row>
-     </Container>
+    </Container>
     );
   }
 }

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Col, Row } from 'reactstrap';
+import { Col, Row, Container } from 'reactstrap';
 
 import CoinStache from './projects/CoinStache';
 import EatReview from './projects/EatReview';
@@ -33,7 +33,9 @@ toggleAltSetup = e =>
 
 render() {
   return(
+
     <div className="project-container">
+
 
       <div className="project-navigation">
           <h5>Projects:</h5>
@@ -82,17 +84,22 @@ render() {
 
           </div>
       </div>
-      <div className="project-main">
-        { this.state.activeProject === 0 ?  <CoinStache /> :
-          this.state.activeProject === 1 ?  <EatReview /> :
-          this.state.activeProject === 2 ?  <InstaClone /> :
-          this.state.activeProject === 3 ?  <WebScraper /> :
-          this.state.activeProject === 4 ?  <AltSetup /> : "Error"
-           }
 
-      </div>
+
+        <div className="project-main">
+          { this.state.activeProject === 0 ?  <CoinStache /> :
+            this.state.activeProject === 1 ?  <EatReview /> :
+            this.state.activeProject === 2 ?  <InstaClone /> :
+            this.state.activeProject === 3 ?  <WebScraper /> :
+            this.state.activeProject === 4 ?  <AltSetup /> : "Error"
+             }
+
+        </div>
+      
+
 
     </div>
+
     );
   }
 }
