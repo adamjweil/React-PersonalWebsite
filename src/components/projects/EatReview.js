@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { Panel, PanelGroup, Accordion } from 'react-bootstrap';
 import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, Collapse } from 'reactstrap';
 
+import EatReviewCarousal from './carousels/EatReviewCarousal';
+
 class EatReview extends Component {
   constructor() {
     super();
@@ -20,24 +22,28 @@ class EatReview extends Component {
 render() {
   return(
       <Container>
+
         <Row>
           <Col md="12" style={{textAlign: 'center'}}>
             <h1>Adam's Eat & Review<h5>Find the Best Spots to Eat!</h5></h1>
           </Col>
         </Row>
+
         <Row>
           <Col md="12">
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
+               <img src="https://s3.amazonaws.com/aw-personal-website-images/chat.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
                DESCRIPTION
                <Button
-                 style={{opacity: '.7', marginLeft: '20px', borderRadius: '5px', fontSize: '12px'}}
+                 style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px'}}
                  color="success"
                  size="sm"
                  onClick={this.toggleDescription}>
                  { this.state.collapse ? "Hide Full" : "Show Full" }
                </Button>
              </CardHeader>
+
              <CardBlock>
                <Collapse isOpen={this.state.collapse}>
                  <CardText>
@@ -49,6 +55,7 @@ render() {
                    </Row>
                  </CardText>
                </Collapse>
+
                <Collapse isOpen={!this.state.collapse}>
                  <CardText>
                    <Row style={{margin: '5px 5px 15px'}}>
@@ -56,6 +63,7 @@ render() {
                    </Row>
                  </CardText>
                </Collapse>
+
              </CardBlock>
            </Card>
          </Col>
@@ -64,7 +72,8 @@ render() {
        <Row>
          <Col md="12" style={{marginTop: "15px", marginBottom: '20px'}}>
            <Card style={{borderColor: '#DFDFE1'}}>
-             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', opacity: '.7'}}>
+             <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
+               <img src="https://s3.amazonaws.com/aw-personal-website-images/chip.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
                TECH STACK
              </CardHeader>
              <CardBlock>
@@ -97,30 +106,43 @@ render() {
                    </Card>
                  </Col>
 
-                 <Col md={{size: 3, offset: 0}} style={{marginTop: "15px"}}>
-                   <Card body inverse className="text-center" style={{ backgroundColor: '#333', borderColor: '#333'}}>
-                    <CardTitle>
-                      <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" />
-                      &nbsp;&nbsp;GitHub
-                    </CardTitle>
-                    <a href="https://github.com/adamjweil/AdamsEat-Review" target="_blank" className="card-button btn btn-sm btn-light" role="button" aria-disabled="true" style={{}}>
-                      &nbsp;&nbsp; Source Code
-                    </a>
-                  </Card>
+                 <Col md={{ size: 3, offset: 0 }} style={{marginTop: "15px"}}>
+                   <Card style={{borderColor: '#DFDFE1'}}>
+                     <CardHeader style={{ backgroundColor: '#17a2b8', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '1'}}>
+                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" style={{ marginRight: '10px'}} />
+                       GitHub
+                     </CardHeader>
+                     <CardBlock>
+                       <a href="https://github.com/adamjweil/AdamsEat-Review" target="_blank" className="card-button btn btn-sm btn-success" role="button" aria-disabled="true" style={{marginBottom: "0px", width: "100%", borderRadius: '10px'}}>
+                         Source Code
+                       </a>
+                     </CardBlock>
+                   </Card>
                  </Col>
 
-                 <Col md={{size: 3, offset: 0}} style={{marginTop: "15px"}}>
-                   <Card body inverse className="text-center" style={{ backgroundColor: '#333', borderColor: '#333'}}>
-                    <CardTitle>Heroku</CardTitle>
-                    <a href="https://adams-eatandreview.herokuapp.com/" target="_blank" className="card-button btn btn-sm btn-light" role="button" aria-disabled="true" style={{}}>
-                      &nbsp;&nbsp; Visit Site!
-                    </a>
-                  </Card>
+                 <Col md={{ size: 3, offset: 0 }} style={{marginTop: "15px"}}>
+                   <Card style={{borderColor: '#DFDFE1'}}>
+                     <CardHeader style={{ backgroundColor: '#17a2b8', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '1'}}>
+                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Heroku_Logo.png" width="32px" height="28px" style={{ marginTop: '0px', marginRight: '10px'}} />
+                       Heroku
+                     </CardHeader>
+                     <CardBlock>
+                       <a href="https://adams-eatandreview.herokuapp.com/" target="_blank" className="card-button btn btn-sm btn-success" role="button" aria-disabled="true" style={{marginBottom: "0px", width: "100%", borderRadius: '10px'}}>
+                         Visit Site!
+                       </a>
+                     </CardBlock>
+                   </Card>
                  </Col>
+
                </Row>
-
              </CardBlock>
            </Card>
+
+           <Row style={{marginTop: "10px"}}>
+             <Col md={{size: 12}}>
+               <EatReviewCarousal />
+             </Col>
+           </Row>
 
          </Col>
        </Row>

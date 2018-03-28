@@ -1,30 +1,49 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
-import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, CardColumns, CardSubtitle, CardBody } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption, Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, CardColumns, CardSubtitle, CardBody, Badge } from 'reactstrap';
+import { Glyphicon } from 'react-bootstrap';
+
 
 const items = [
   {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Insta_MainPage.png",
+    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_MainPage.png",
     altText: 'Slide 1',
-    caption: 'Main...',
+    caption: 'Test Test',
     captionHeader: "Main Page"
   },
   {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Insta_Profile.png",
+    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_Login.png",
     altText: 'Slide 2',
-    caption: 'profile....',
-    captionHeader: "Profile Page"
+    caption: '...',
+    captionHeader: "Login Zoom"
   },
   {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Insta_About2.png",
+    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_RestShowPage.png",
     altText: 'Slide 3',
-    caption: 'about...',
-    captionHeader: "About Page"
+    caption: '...',
+    captionHeader: "Restaurant Show Page"
+  },
+  {
+    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_NewRest.png",
+    altText: 'Slide 4',
+    caption: '...',
+    captionHeader: "Post a New Restautant"
+  },
+  {
+    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_PostReview.png",
+    altText: 'Slide 5',
+    caption: '...',
+    captionHeader: "Write a Review!"
+  },
+  {
+    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_ProfilePage.png",
+    altText: 'Slide 6',
+    caption: '.....',
+    captionHeader: "User Profile Page"
   }
 ];
 
-class InstaCloneCarousal extends Component {
+class EatReviewCarousal extends Component {
   constructor() {
     super();
     this.state = {
@@ -64,12 +83,12 @@ render() {
   const slides = items.map((item) => {
       return (
           <CarouselItem
-            className="carouselContainer insta"
+            className="carouselContainer eat"
             onExiting={this.onExiting}
             onExited={this.onExited}
             key={item.src}
             >
-            <Row style={{height: '550px'}}>
+            <Row style={{height: '600px'}}>
               <Col md={{size: 12, offset: 0}} sm={{size: 10, offset: 1}} style={{}}>
                 <img src={item.src} alt={item.altText} />
               </Col>
@@ -84,7 +103,7 @@ render() {
     });
 
     return (
-      <div className="instaPhotoContainer">
+      <div className="eatPhotoContainer">
         <Card>
           <CardHeader
               style={{
@@ -123,4 +142,5 @@ render() {
   }
 }
 
-export default InstaCloneCarousal;
+
+export default EatReviewCarousal;

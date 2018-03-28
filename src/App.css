@@ -158,14 +158,29 @@
   display: inline-block;
   border-right: 2px solid #DFDFE1;
   left: 0;
+  /* top: 0px; */
+  /* bottom: 0; */
   min-height: 100vh;
   height: 100%;
-  padding-bottom: 200px;
-  /* margin-top: 10px; */
+  /* overflow: scroll; */
+  /* height: 100%; */
+  /* padding-bottom: 200px; */
   background-color: #F4F4F4;
 }
+@media (max-width: 600px) {
+  .project-navigation {
+    display: none;
+  }
+  .project-main {
+    display: block;
+    margin-left: -100px;
+  }
+}
+.project-container {
+  position: relative;
+  overflow: hidden;
+}
 .project-links button {
-  /* opacity: .9; */
   width: 150px;
   height: 40px;
   border-radius: 5px;
@@ -179,21 +194,45 @@
 .proj-desc-title {
   background: green;
 }
-.github-heroku-buttons a {
-  /* width: 220px; */
-  /* display: inline-block; */
-  /* float: left; */
-}
 .carouselContainer {
-  /* background: #dee0e2; */
-  background: #F4F4F4;
-  height: 550px;
+  background: #6c757d;
+  height: 100%;
   max-width: 100%;
-  /* border-radius: 50px; */
 }
 .coin img {
-  margin-left: 32%;
-  /* margin-right: 40%; */
+  margin-top: 20px;
   height: 430px;
-  /* max-width: 100%; */
 }
+.eat img {
+  margin-top: 20px;
+  height: 460px;
+  margin-left: 12%;
+}
+.insta img {
+  height: 450px;
+  width: 500px;
+  margin-left: 12%;
+}
+.photoContainer {
+  width: 700px;
+  margin-left: 15px;
+}
+.eatPhotoContainer {
+  width: 900px;
+  margin-left: 15px;
+}
+.instaPhotoContainer {
+  width: 700px;
+  margin-left: 15px;
+}
+@media (max-width: 700px) {
+  .photoContainer {
+    width: 400px;
+    height: 900px;
+  }
+  .coin img {
+    margin-left: 50px;
+  }
+}
+/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
+/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
