@@ -21,7 +21,7 @@ class CoinStache extends Component {
 render() {
   return(
       <Container>
-        
+
         <Row>
           <Col md="12" style={{textAlign: 'center'}}>
             <h1>Coin'Stache<h5>Cryptocurrency Made Easy</h5></h1>
@@ -91,7 +91,7 @@ render() {
        </Row>
 
        <Row style={{marginTop: "10px"}}>
-         <Col md={{offset: 1}}>
+         <Col md={{size: 12, offset: 0}}>
            <CoinStacheCarousal />
          </Col>
        </Row>

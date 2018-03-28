@@ -36,7 +36,6 @@ render() {
 
     <div className="project-container">
 
-
       <div className="project-navigation">
           <h5>Projects:</h5>
           <div className="project-links">
@@ -85,7 +84,6 @@ render() {
           </div>
       </div>
 
-
         <div className="project-main">
           { this.state.activeProject === 0 ?  <CoinStache /> :
             this.state.activeProject === 1 ?  <EatReview /> :
@@ -93,12 +91,9 @@ render() {
             this.state.activeProject === 3 ?  <WebScraper /> :
             this.state.activeProject === 4 ?  <AltSetup /> : "Error"
              }
-
         </div>
-      
 
-
-    </div>
+      </div>
 
     );
   }

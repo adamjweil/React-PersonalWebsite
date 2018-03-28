@@ -84,41 +84,48 @@ render() {
     });
 
     return (
-      <div className="instaPhotoContainer">
-        <Card>
-          <CardHeader
-              style={{
-                backgroundColor: '#F4F4F4',
-                color: 'dark',
-                fontSize: '18px',
-                fontWeight: '700',
-                opacity: '1'}} >
-            <img src="https://s3.amazonaws.com/aw-personal-website-images/Photos_logo.png" style={{ color: 'dark', width: "40px",  marginRight: "10px"}} />
-              Photos
-          </CardHeader>
+      <Container>
+        <Row>
+          <Col md={{size: 10, offset: 1}}>
+            <div className="instaPhotoContainer">
+              <Card>
+                <CardHeader
+                  style={{
+                    backgroundColor: '#F4F4F4',
+                    color: 'dark',
+                    fontSize: '18px',
+                    fontWeight: '700',
+                    opacity: '1'}} >
+                    <img src="https://s3.amazonaws.com/aw-personal-website-images/Photos_logo.png" style={{ color: 'dark', width: "40px",  marginRight: "10px"}} />
+                    Photos
+                  </CardHeader>
 
-          <CardBlock style={{ padding: '0px', opacity: '1' }}>
-            <Row>
-              <Col md="12">
-                <div className="carouselContainer">
-                  <Carousel
-                    activeIndex={activeIndex}
-                    next={this.next}
-                    previous={this.previous}
-                    interval={20000}
-                    >
-                    <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-                      {slides}
-                    <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} style={{ }} />
-                    <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-                  </Carousel>
-                </div>
-              </Col>
-            </Row>
-          </CardBlock>
+                  <CardBlock style={{ padding: '0px', opacity: '1' }}>
+                    <Row>
+                      <Col md="12">
+                        <div className="carouselContainer">
+                          <Carousel
+                            activeIndex={activeIndex}
+                            next={this.next}
+                            previous={this.previous}
+                            interval={20000}
+                            >
+                            <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+                            {slides}
+                            <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} style={{ }} />
+                            <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+                          </Carousel>
+                        </div>
+                      </Col>
+                    </Row>
+                  </CardBlock>
 
-        </Card>
-      </div>
+                </Card>
+              </div>
+
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

@@ -139,7 +139,7 @@ render() {
            </Card>
 
            <Row style={{marginTop: "10px"}}>
-             <Col md={{size: 12}}>
+             <Col md={{size: 12, offset: 0}}>
                <EatReviewCarousal />
              </Col>
            </Row>
