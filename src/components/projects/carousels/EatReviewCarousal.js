@@ -8,38 +8,38 @@ const items = [
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_MainPage.png",
     altText: 'Slide 1',
-    caption: 'Test Test',
-    captionHeader: "Main Page"
+    caption: 'Browse through some of the recently added restaurants, or login and post some reviews of your own',
+    captionHeader: "Home Page"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_Login.png",
     altText: 'Slide 2',
-    caption: '...',
+    caption: 'Easily register and login using this responsive form',
     captionHeader: "Login Zoom"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_RestShowPage.png",
     altText: 'Slide 3',
-    caption: '...',
+    caption: 'View the restaurant details on top (cuisine, address, average review, and # of reviews). Below you can view/read the reviews, as well as post a review of your own (if you are logged in)',
     captionHeader: "Restaurant Show Page"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_NewRest.png",
     altText: 'Slide 4',
-    caption: '...',
-    captionHeader: "Post a New Restautant"
+    caption: 'Dont see a restaurant on our application? Add it with this super simple form!',
+    captionHeader: "Add a Restautant"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_PostReview.png",
     altText: 'Slide 5',
-    caption: '...',
-    captionHeader: "Write a Review!"
+    caption: 'Does this restaurant have the best burger youve ever had? Let everyone know!',
+    captionHeader: "Write a Review"
   },
   {
     src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_ProfilePage.png",
     altText: 'Slide 6',
-    caption: '.....',
-    captionHeader: "User Profile Page"
+    caption: 'View an organized list of the restaurants that youve added to the app`s database. Also take a look at the various reviews youve left (and the rating #s you given)',
+    captionHeader: "Profile Page"
   }
 ];
 
@@ -88,7 +88,7 @@ render() {
             onExited={this.onExited}
             key={item.src}
             >
-            <Row style={{height: '650px'}}>
+            <Row style={{height: '610px'}}>
               <Col md={{size: 12, offset: 0}} sm={{size: 10, offset: 1}} style={{}}>
                 <img src={item.src} alt={item.altText} />
               </Col>
@@ -105,7 +105,7 @@ render() {
     return (
       <Container>
         <Row>
-          <Col md={{size: 10, offset: 1}}>
+          <Col md={{size: 10, offset: 1}} sm={{size: 12}}>
             <div className="eatPhotoContainer">
               <Card>
                 <CardHeader
