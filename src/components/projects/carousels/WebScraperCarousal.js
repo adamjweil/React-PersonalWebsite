@@ -6,44 +6,32 @@ import { Glyphicon } from 'react-bootstrap';
 
 const items = [
   {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_MainPage.png",
+    src: "https://user-images.githubusercontent.com/25589910/37607795-60a65b46-2b6f-11e8-869c-0cb7f77b2cb4.png",
     altText: 'Slide 1',
     caption: 'Test Test',
     captionHeader: "Main Page"
   },
   {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_Login.png",
+    src: "https://user-images.githubusercontent.com/25589910/37607846-72dbdd2c-2b6f-11e8-8416-e5c16d0ad97f.png",
     altText: 'Slide 2',
     caption: '...',
-    captionHeader: "Login Zoom"
+    captionHeader: "Scrape Results (Top Half)"
   },
   {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_RestShowPage.png",
+    src: "https://user-images.githubusercontent.com/25589910/37607867-7ef82ed0-2b6f-11e8-99cd-9e1433b398ab.png",
     altText: 'Slide 3',
     caption: '...',
-    captionHeader: "Restaurant Show Page"
+    captionHeader: "Scrape Results (Bottom Half)"
   },
   {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_NewRest.png",
+    src: "https://user-images.githubusercontent.com/25589910/37607886-88395fbe-2b6f-11e8-8c92-75f72719afd5.png",
     altText: 'Slide 4',
     caption: '...',
-    captionHeader: "Post a New Restautant"
-  },
-  {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_PostReview.png",
-    altText: 'Slide 5',
-    caption: '...',
-    captionHeader: "Write a Review!"
-  },
-  {
-    src: "https://s3.amazonaws.com/aw-personal-website-images/Eat_ProfilePage.png",
-    altText: 'Slide 6',
-    caption: '.....',
-    captionHeader: "User Profile Page"
+    captionHeader: "Scrape History"
   }
 ];
 
-class EatReviewCarousal extends Component {
+class WebScraperCarousal extends Component {
   constructor() {
     super();
     this.state = {
@@ -83,12 +71,12 @@ render() {
   const slides = items.map((item) => {
       return (
           <CarouselItem
-            className="carouselContainer eat"
+            className="carouselContainer scrape"
             onExiting={this.onExiting}
             onExited={this.onExited}
             key={item.src}
             >
-            <Row style={{height: '650px'}}>
+            <Row style={{height: '700px'}}>
               <Col md={{size: 12, offset: 0}} sm={{size: 10, offset: 1}} style={{}}>
                 <img src={item.src} alt={item.altText} />
               </Col>
@@ -150,4 +138,4 @@ render() {
 }
 
 
-export default EatReviewCarousal;
+export default WebScraperCarousal;

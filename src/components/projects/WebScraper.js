@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 import { Panel, PanelGroup, Accordion } from 'react-bootstrap';
 import { Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, Collapse } from 'reactstrap';
 
+import WebScraperCarousal from './carousels/WebScraperCarousal';
+
 class WebScraper extends Component {
   constructor() {
     super();
@@ -127,6 +129,12 @@ render() {
 
              </CardBlock>
            </Card>
+
+           <Row style={{marginTop: "10px"}}>
+             <Col md={{size: 12, offset: 0}}>
+               <WebScraperCarousal />
+             </Col>
+           </Row>
 
          </Col>
        </Row>

@@ -205,7 +205,8 @@
 }
 .eat img {
   margin-top: 20px;
-  height: 460px;
+  /* height: 460px; */
+  width: 80%;
   margin-left: 12%;
 }
 .insta img {
@@ -213,12 +214,17 @@
   width: 500px;
   margin-left: 12%;
 }
+.scrape img {
+  width: 80%;
+  margin-left: 10%;
+}
 .photoContainer {
-  width: 700px;
+  min-width: 600px;
   margin-left: 15px;
 }
 .eatPhotoContainer {
-  width: 900px;
+  min-width: 600px;
+  /* min-height: 900px; */
   margin-left: 15px;
 }
 .instaPhotoContainer {

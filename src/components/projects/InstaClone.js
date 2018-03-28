@@ -82,6 +82,12 @@ render() {
          </Col>
        </Row>
 
+       <Row style={{marginTop: "10px"}}>
+         <Col md={{size: 12, offset: 0}}>
+           <InstaCloneCarousal />
+         </Col>
+       </Row>
+
        <Row>
          <Col md="12" style={{marginTop: "15px", marginBottom: '20px'}}>
            <Card style={{borderColor: '#DFDFE1'}}>
@@ -143,12 +149,6 @@ render() {
                </Row>
              </CardBlock>
            </Card>
-
-           <Row style={{marginTop: "10px"}}>
-             <Col md={{size: 12, offset: 0}}>
-               <InstaCloneCarousal />
-             </Col>
-           </Row>
 
          </Col>
        </Row>
