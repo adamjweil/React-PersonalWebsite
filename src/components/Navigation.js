@@ -26,24 +26,24 @@ class Navigation extends React.Component {
             <li className="nav-item">
               <NavLink className="nav-link" exact to="/">Home</NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/Projects">Projects</NavLink>
-            </li>
 
             <li className="nav-item">
-              <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                <DropdownToggle caret style={{backgroundColor: "#343a40", borderWidth: "0px", width: "30px"}} />
-                <DropdownMenu>
-                  <DropdownItem header>Projects</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>Coin'Stache</DropdownItem>
-                  <DropdownItem>Eat & Review</DropdownItem>
-                </DropdownMenu>
+              <ButtonDropdown direction="down" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                <NavLink className="nav-link" to="/Projects">Projects</NavLink>
+                  <DropdownToggle caret color="primary" />
+                  <DropdownMenu>
+                    <DropdownItem header>Projects</DropdownItem>
+                    <DropdownItem divider/>
+                    <DropdownItem>Coin'Stache</DropdownItem>
+                    <DropdownItem>Adam's Eat & Review</DropdownItem>
+                    <DropdownItem>React-InstaClone</DropdownItem>
+                    <DropdownItem>Page Scraper</DropdownItem>
+                    <DropdownItem>Another Action</DropdownItem>
+                  </DropdownMenu>
               </ButtonDropdown>
             </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" to="/Contact">Contact</NavLink>
-            </li>
+
+
           </ul>
         </nav>
       </header>
