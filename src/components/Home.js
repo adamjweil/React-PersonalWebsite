@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-// import Button from 'react-bootstrap/lib/Button';
-// import Button from 'react-bootstrap/lib/Button';
-// import { Label } from 'react-bootstrap/lib/Label';
 import { Label, Button } from 'reactstrap';
 
 import Footer from './Footer';

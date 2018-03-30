@@ -34,15 +34,34 @@ class Navigation extends React.Component {
                   <DropdownMenu>
                     <DropdownItem header>Projects</DropdownItem>
                     <DropdownItem divider/>
-                    <DropdownItem>Coin'Stache</DropdownItem>
-                    <DropdownItem>Adam's Eat & Review</DropdownItem>
-                    <DropdownItem>React-InstaClone</DropdownItem>
-                    <DropdownItem>Page Scraper</DropdownItem>
-                    <DropdownItem>Another Action</DropdownItem>
+                    <DropdownItem>
+                      <div onClick={this.props.toggleCoinProject}>
+                        Coin'Stache
+                      </div>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <div onClick={this.props.toggleEatProject}>
+                        Adam's Eat & Review
+                      </div>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <div onClick={this.props.toggleInstaProject}>
+                        React-InstaClone
+                      </div>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <div onClick={this.props.toggleScrapeProject}>
+                        Page Scraper
+                      </div>
+                    </DropdownItem>
+                    <DropdownItem>
+                      <div onClick={this.props.toggleAltSetup}>
+                        Alt Setup
+                      </div>
+                    </DropdownItem>
                   </DropdownMenu>
               </ButtonDropdown>
             </li>
-
 
           </ul>
         </nav>
