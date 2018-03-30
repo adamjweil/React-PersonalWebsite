@@ -35,29 +35,39 @@ class Navigation extends React.Component {
                     <DropdownItem header>Projects</DropdownItem>
                     <DropdownItem divider/>
                     <DropdownItem>
-                      <div onClick={this.props.toggleCoinProject}>
-                        Coin'Stache
-                      </div>
+                      <NavLink to="/Projects">
+                        <div onClick={this.props.toggleCoinProject}>
+                          Coin'Stache
+                        </div>
+                      </NavLink>
                     </DropdownItem>
                     <DropdownItem>
-                      <div onClick={this.props.toggleEatProject}>
-                        Adam's Eat & Review
-                      </div>
+                      <NavLink to="/Projects">
+                        <div onClick={this.props.toggleEatProject}>
+                          Adam's Eat & Review
+                        </div>
+                      </NavLink>
                     </DropdownItem>
                     <DropdownItem>
-                      <div onClick={this.props.toggleInstaProject}>
-                        React-InstaClone
-                      </div>
+                      <NavLink to="/Projects">
+                        <div onClick={this.props.toggleInstaProject}>
+                          React-InstaClone
+                        </div>
+                      </NavLink>
                     </DropdownItem>
                     <DropdownItem>
-                      <div onClick={this.props.toggleScrapeProject}>
-                        Page Scraper
-                      </div>
+                      <NavLink to="/Projects">
+                        <div onClick={this.props.toggleScrapeProject}>
+                          Page Scraper
+                        </div>
+                      </NavLink>
                     </DropdownItem>
                     <DropdownItem>
-                      <div onClick={this.props.toggleAltSetup}>
-                        Alt Setup
-                      </div>
+                      <NavLink to="/Projects">
+                        <div onClick={this.props.toggleAltSetup}>
+                          Alt Setup
+                        </div>
+                      </NavLink>
                     </DropdownItem>
                   </DropdownMenu>
               </ButtonDropdown>

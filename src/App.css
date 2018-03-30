@@ -158,13 +158,8 @@
   display: inline-block;
   border-right: 2px solid #DFDFE1;
   left: 0;
-  /* top: 0px; */
-  /* bottom: 0; */
   min-height: 100vh;
   height: 100%;
-  /* overflow: scroll; */
-  /* height: 100%; */
-  /* padding-bottom: 200px; */
   background-color: #F4F4F4;
 }
 @media (max-width: 600px) {
@@ -218,26 +213,3 @@
   max-width: 78%;
   margin-left: 10%;
 }
-.photoContainer {
-  /* min-width: 600px; */
-}
-.eatPhotoContainer {
-  /* min-width: 600px; */
-  /* min-height: 900px; */
-  /* margin-left: 15px; */
-}
-.instaPhotoContainer {
-  /* width: 700px; */
-  /* margin-left: 15px; */
-}
-@media (max-width: 850px) {
-  /* .photoContainer {
-    width: 90%;
-    height: 900px;
-  }
-  .coin img {
-    margin-left: 20px;
-  } */
-}
-/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
-/* @import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"); */
