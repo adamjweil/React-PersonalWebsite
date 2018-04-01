@@ -30,7 +30,7 @@ render() {
         <div className="profile-row">
           <div className="profile-view">
             <div className="avatar-row">
-              <img src="https://user-images.githubusercontent.com/25589910/36649262-c4f14e38-1a69-11e8-8722-002b648ea184.jpg" width="360px" height="300px">
+              <img src="https://user-images.githubusercontent.com/25589910/36649262-c4f14e38-1a69-11e8-8722-002b648ea184.jpg" width="360px" height="310px">
               </img>
             </div>
 
@@ -74,24 +74,24 @@ render() {
           <div className="profile-text">
             <div className="row">
               <p className="">
-                Adam Weil loves a challenge and excels at bringing a diverse array of skills to each situation. Driven by a strong entrepenurial personality, Adam
+                Adam Weil loves a challenge and excels at bringing a diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems.
               </p>
             </div>
             <div className="row">
               <p>
-                As a trader at a small brokerage firm, he identified and executed on opportunities in the pharmaceutical and technology sectors. Adam co-founded a web-based apparel business, focusing on the site development and offshore product manufacture. Adam built on this experience, completing the Fullstack Web Development program at Dev Bootcamp.
+                As a trader at a small brokerage firm, he identified and executed on opportunities in the pharmaceutical and technology sectors. Adam co-founded a web-based apparel business, focusing on the site development and offshore product manufacture. That experience captivated Adam's enthusiasm for technology, specifically web and software development. As a result, he decided to strengthen his skills by attending a Fullstack Web Development program at Dev Bootcamp. Through the completion of this program Adam's proficiency as a developer grew exponentially.
               </p>
             </div>
             <div className="row">
               <p>
-                Adam is looking for opportunities to capitalize on his experience in finance and passion for technology, whether that be as a member of a growing start-up, or in a more mature established business. Adam brings both strong technical and interpersonal skills into whatever environment he find himself in.
+                Adam is looking for opportunities to capitalize on his experience in finance and passion for technology, whether that be as a member of a growing start-up, or in a more mature established business. Adam brings both strong technical and interpersonal skills into whatever environment he finds himself in.
               </p>
             </div>
           </div>
 
           <div className="profile-interests">
             <p>
-              In addition to his passion and involvement in the tech community, Adam actively participates in a number of other pursuits. He is a certified Chartered Financial Analyst, and has volunteered his time in support of certain CFA Program activities. He maintains a very strong relationships with his High School alma mater, Carrabassett Valley Academy, and is an active Investment Committee member of schools endowment. In his liesure time he enjoys traveling, playing golf, snowboarding, water sports, and spending time friends and family.
+              In addition to his passion and involvement in the tech community, Adam actively participates in a number of other pursuits. He is a certified Chartered Financial Analyst, and has volunteered his time in support of certain CFA Program activities. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active Investment Committee member of schools endowment. In his leisure time he enjoys traveling, playing golf, snowboarding, water sports, and spending time friends and family.
             </p>
           </div>
 
