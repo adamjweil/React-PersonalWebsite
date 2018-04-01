@@ -30,7 +30,7 @@ class Navigation extends React.Component {
             <li className="nav-item">
               <ButtonDropdown direction="down" isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                 <NavLink className="nav-link" to="/Projects">Projects</NavLink>
-                  <DropdownToggle caret color="primary" />
+                  <DropdownToggle caret color="dark" />
                   <DropdownMenu>
                     <DropdownItem header>Projects</DropdownItem>
                     <DropdownItem divider/>

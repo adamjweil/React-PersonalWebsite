@@ -31,8 +31,8 @@ render() {
           </h5>
         </Col>
       </Row>
-      <Row>
 
+      <Row style={{paddingBottom: '50px'}}>
         <Col md={{size: 12, offset: 0}} sm={{size: 12, offset: 0}}>
           <div className="projects">
             { this.props.activeProject === 0 ?  <CoinStache /> :
@@ -43,11 +43,8 @@ render() {
             }
           </div>
         </Col>
-
       </Row>
     </Container>
-
-
     );
   }
 }
