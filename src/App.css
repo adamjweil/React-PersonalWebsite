@@ -153,22 +153,32 @@
   margin-top: 25px;
 }
 .project-navigation {
-  width: 200px;
   position: absolute;
-  display: inline-block;
-  border-right: 2px solid #DFDFE1;
   left: 0;
-  min-height: 100vh;
-  height: 100%;
+  margin-left: -20px;
+  border-top: 2px solid #DFDFE1;
+  border-right: 2px solid #DFDFE1;
+  border-bottom: 2px solid #DFDFE1;
+  margin-top: 20px;
+  height: 300px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #F4F4F4;
 }
-@media (max-width: 600px) {
+.project-navigation button {
+  border-radius: 10px;
+}
+.project-nav-header {
+  margin-top: 50px;
+  margin-left: 35px;
+}
+@media (max-width: 750px) {
   .project-navigation {
     display: none;
   }
   .project-main {
     display: block;
-    margin-left: -100px;
+    /* margin-left: -100px; */
   }
 }
 .project-container {
