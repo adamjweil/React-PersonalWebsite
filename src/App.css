@@ -11,7 +11,7 @@
   padding: 20px;
   border: 3px solid #DFDFE1;
   background: #F4F4F4;
-  width: 410px;
+  width: 406px;
   margin-top: 20px;
 }
 .container-fluid {
@@ -80,8 +80,9 @@
 .profile-text {
   display: inline-block;
   margin-left: 500px;
-  max-width: 700px;
-  padding: 10px 40px 5px;
+  max-width: 850px;
+  min-width: 400px;
+  padding: 15px 40px 5px;
   border: 3px solid #DFDFE1;
   background: #F4F4F4;
   margin-top: 25px;
