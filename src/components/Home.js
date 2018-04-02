@@ -11,14 +11,9 @@ class Home extends Component {
     this.state = {
     showResume: false
   },
-  this.handleShowResume = this.handleShowResume.bind(this);
-  this.handleHideResume = this.handleHideResume.bind(this);
   this.handleToggleResume = this.handleToggleResume.bind(this);
 }
-handleShowResume = e =>
-  this.setState({ showResume: true });
-handleHideResume = e =>
-  this.setState({ showResume: false });
+
 handleToggleResume = e =>
 this.setState(prevState => ({
   showResume: !prevState.showResume
@@ -30,7 +25,7 @@ render() {
         <div className="profile-row">
           <div className="profile-view">
             <div className="avatar-row">
-              <img src="https://user-images.githubusercontent.com/25589910/36649262-c4f14e38-1a69-11e8-8722-002b648ea184.jpg" width="360px" height="310px">
+              <img src="https://s3.amazonaws.com/aw-personal-website-images/pw_avtar.jpg" width="360px" height="270px">
               </img>
             </div>
 
@@ -87,12 +82,11 @@ render() {
                 Adam is looking for opportunities to capitalize on his experience in finance and passion for technology, whether that be as a member of a growing start-up, or in a more mature established business. Adam brings both strong technical and interpersonal skills into whatever environment he finds himself in.
               </p>
             </div>
-          </div>
-
-          <div className="profile-interests">
-            <p>
-              In addition to his passion and involvement in the tech community, Adam actively participates in a number of other pursuits. He is a certified Chartered Financial Analyst, and has volunteered his time in support of certain CFA Program activities. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active Investment Committee member of schools endowment. In his leisure time he enjoys traveling, playing golf, snowboarding, water sports, and spending time friends and family.
-            </p>
+            <div className="row">
+              <p>
+                In addition to his passion and involvement in the tech community, Adam actively participates in a number of other pursuits. He is a certified Chartered Financial Analyst, and has volunteered his time in support of certain CFA Program activities. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active Investment Committee member of schools endowment. In his leisure time he enjoys traveling, playing golf, snowboarding, water sports, and spending time with friends and family.
+              </p>
+            </div>
           </div>
 
           <div className="resume-view">
