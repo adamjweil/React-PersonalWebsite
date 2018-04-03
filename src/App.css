@@ -67,6 +67,9 @@
   margin-top: -3px;
   margin-right: 3px;
 }
+.resume span img {
+  margin-top: -1px;
+}
 .resumebadge {
   margin-top: 10px;
   height: 25px;

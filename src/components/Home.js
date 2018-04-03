@@ -51,7 +51,7 @@ render() {
 
             <div className="resume row justify-content-center">
               <h5><span className="resumebadge badge badge-secondary">
-                <img src="https://s3.amazonaws.com/aw-personal-website-images/resume_logo1.png" width="18px" height="18px" />
+                <img src="https://s3.amazonaws.com/aw-personal-website-images/resume_logo1.png" width="20px" height="18px" />
                 &nbsp;Résumé:&nbsp;
               </span></h5>
 
