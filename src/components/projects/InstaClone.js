@@ -44,7 +44,7 @@ render() {
                <img src="https://s3.amazonaws.com/aw-personal-website-images/chat.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
                DESCRIPTION
                <Button
-                 style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px'}}
+                 style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px', fontWeight: '700'}}
                  color="success"
                  size="sm"
                  onClick={this.toggleDescription}>
@@ -154,7 +154,7 @@ render() {
            <InstaCloneCarousal />
          </Col>
        </Row>
-       
+
      </Container>
     );
   }
