@@ -59,7 +59,7 @@ render() {
                   { this.state.showResume ? "Hide" : "Show" }
               </button>
 
-              <a className="btn btn-link info" href="https://github.com/adamjweil/PersonalWebsite/files/1756864/Resume_AdamWeil.pdf" download >
+              <a className="btn btn-link info" href="https://github.com/adamjweil/React-PersonalWebsite/files/1933005/Resume_AdamWeil.pdf" download >
                   Download (PDF)
               </a>
 
