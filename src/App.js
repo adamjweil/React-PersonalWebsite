@@ -11,9 +11,10 @@ import Footer from './components/Footer';
 class App extends Component {
   constructor() {
     super();
-    this.state = {
+    this.state =
+    {
       activeProject: 0
-    },
+    };
     this.toggleCoinProject = this.toggleCoinProject.bind(this);
     this.toggleEatProject = this.toggleEatProject.bind(this);
     this.toggleInstaProject = this.toggleInstaProject.bind(this);

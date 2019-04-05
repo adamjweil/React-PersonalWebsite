@@ -8,9 +8,10 @@ import Resume from './Resume';
 class Home extends Component {
   constructor() {
     super();
-    this.state = {
+    this.state = 
+      {
     showResume: false
-  },
+  }
   this.handleToggleResume = this.handleToggleResume.bind(this);
 }
 
