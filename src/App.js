@@ -6,6 +6,9 @@ import Navigation from './components/Navigation';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Work from './components/Work';
+import Education from './components/Education';
+import Interests from './components/Interests';
 import Footer from './components/Footer';
 
 class App extends Component {
@@ -46,6 +49,10 @@ class App extends Component {
 
             <Switch>
               <Route exact path="/" render={ () => <Home /> } />
+              <Route exact path="/work" render={ () => <Work /> } />
+              <Route exact path="/edu" render={ () => <Education /> } />
+              <Route exact path="/interests" render={ () => <Interests /> } />
+              <Route exact path="/contact" render={ () => <Contact /> } />
               <Route path="/Projects" render={ () =>
                   <Projects
                     activeProject={this.state.activeProject}
