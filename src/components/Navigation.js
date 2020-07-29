@@ -24,7 +24,7 @@ class Navigation extends React.Component {
           </a>
           <ul className="nav nav-pills justify-content-end">
 
-
+{/*
           <li className="nav-item">
           <NavLink className="nav-link" exact to="/work">WORK EXPERIENCE</NavLink>
           </li>
@@ -40,6 +40,7 @@ class Navigation extends React.Component {
           <li className="nav-item">
           <NavLink className="nav-link" exact to="/CONTACT">CONTACT</NavLink>
           </li>
+          */}
 
           <li className="nav-item">
             <ButtonDropdown direction="down" isOpen={this.state.dropdownOpen} toggle={this.toggle}>

@@ -8,7 +8,7 @@ import Resume from './Resume';
 class Home extends Component {
   constructor() {
     super();
-    this.state = 
+    this.state =
       {
     showResume: false
   }
@@ -26,25 +26,25 @@ render() {
         <div className="profile-row">
           <div className="profile-view">
             <div className="avatar-row">
-              <img src="https://s3.amazonaws.com/aw-personal-website-images/pw_avtar.jpg" width="360px" height="270px">
+              <img src="https://user-images.githubusercontent.com/25589910/88818074-47e46b00-d18c-11ea-8e3c-e90fa99b8622.jpg" width="360px" height="270px">
               </img>
             </div>
 
             <div className="linkedin-github-links row justify-content-center">
               <a href="https://www.linkedin.com/in/adamjweil/" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true">
-                <img src="https://s3.amazonaws.com/aw-personal-website-images/linkedin.png" width="25px" height="25px" />
+                <img src="https://user-images.githubusercontent.com/25589910/88818435-b3c6d380-d18c-11ea-8ec5-a399392334f6.png" width="18px" height="18px" />
                 &nbsp;&nbsp;LinkedIn
               </a>
 
               <a href="https://github.com/adamjweil" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true">
-                <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="25px" height="23px" />
+                <img src="https://user-images.githubusercontent.com/25589910/88818581-dd7ffa80-d18c-11ea-950b-6dd5f47d2d8e.png" width="25px" height="25px" />
                 &nbsp;&nbsp;GitHub&nbsp;
               </a>
             </div>
 
             <div className="email row justify-content-center">
               <h5><span className="emailbadge badge badge-secondary">
-                <img src="https://s3.amazonaws.com/aw-personal-website-images/email.svg" width="25px" height="25px" />
+                <img src="https://user-images.githubusercontent.com/25589910/88819185-a827dc80-d18d-11ea-86bc-fde292910062.png" width="20px" height="18px" />
                 eMail:&nbsp;
               </span></h5>
               <a className="nav-link" href="mailto:adamjweil@gmail.com">  AdamJWeil@gmail.com</a>
