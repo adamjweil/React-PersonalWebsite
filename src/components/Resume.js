@@ -10,7 +10,7 @@ class Resume extends Component {
 render() {
   return(
           <div className="resume-container">
-            <img src="https://user-images.githubusercontent.com/25589910/39064622-27b37746-449d-11e8-8fc6-06ef67dfabf8.png" className="resumeToPrint" media="print"></img>
+            <img src="https://user-images.githubusercontent.com/25589910/90212208-c530f200-ddc0-11ea-8cb8-8588ddbe7b43.png" className="resumeToPrint" media="print"></img>
           </div>
     );
   }

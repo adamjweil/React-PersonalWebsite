@@ -24,10 +24,10 @@ class Navigation extends React.Component {
           </a>
           <ul className="nav nav-pills justify-content-end">
 
-{/*
           <li className="nav-item">
-          <NavLink className="nav-link" exact to="/work">WORK EXPERIENCE</NavLink>
+            <NavLink className="nav-link" exact to="/resume">R&Eacute;SUM&Eacute; </NavLink>
           </li>
+          {/*
 
           <li className="nav-item">
           <NavLink className="nav-link" exact to="/edu">EDU</NavLink>
