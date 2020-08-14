@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Work from './components/Work';
+import Resume from './components/Resume';
 import Education from './components/Education';
 import Interests from './components/Interests';
 import Footer from './components/Footer';
@@ -49,6 +50,7 @@ class App extends Component {
 
             <Switch>
               <Route exact path="/" render={ () => <Home /> } />
+              <Route exact path="/resume" render={ () => <Resume /> } />
               <Route exact path="/work" render={ () => <Work /> } />
               <Route exact path="/edu" render={ () => <Education /> } />
               <Route exact path="/interests" render={ () => <Interests /> } />

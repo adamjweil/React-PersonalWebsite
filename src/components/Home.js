@@ -52,7 +52,7 @@ render() {
 
             <div className="resume row justify-content-center">
               <h5><span className="resumebadge badge badge-secondary">
-                <img src="https://s3.amazonaws.com/aw-personal-website-images/resume_logo1.png" width="20px" height="18px" />
+                <img src="https://user-images.githubusercontent.com/25589910/90212208-c530f200-ddc0-11ea-8cb8-8588ddbe7b43.png" width="20px" height="18px" />
                 &nbsp;Résumé:&nbsp;
               </span></h5>
 
@@ -60,7 +60,7 @@ render() {
                   { this.state.showResume ? "Hide" : "Show" }
               </button>
 
-              <a className="btn btn-link info" href="https://github.com/adamjweil/React-PersonalWebsite/files/1933005/Resume_AdamWeil.pdf" download >
+              <a className="btn btn-link info" href="https://github.com/adamjweil/React-PersonalWebsite/issues/47#issue-678877516" download >
                   Download (PDF)
               </a>
 
