@@ -44,16 +44,20 @@ render() {
 
             <div className="email row justify-content-center">
               <h5><span className="emailbadge badge badge-secondary">
-                <img src="https://user-images.githubusercontent.com/25589910/88819185-a827dc80-d18d-11ea-86bc-fde292910062.png" width="20px" height="18px" />
-                eMail:&nbsp;
+                {/*
+                  <img src="https://user-images.githubusercontent.com/25589910/88819185-a827dc80-d18d-11ea-86bc-fde292910062.png" width="20px" height="18px" />
+                    */}
+                &nbsp;Email&nbsp;
               </span></h5>
-              <a className="nav-link" href="mailto:adamjweil@gmail.com">  AdamJWeil@gmail.com</a>
+              <a className="nav-link" href="mailto:adamjweil@gmail.com" style={{marginTop: '5px'}}>  AdamJWeil@gmail.com</a>
             </div>
 
             <div className="resume row justify-content-center">
-              <h5><span className="resumebadge badge badge-secondary">
-                <img src="https://user-images.githubusercontent.com/25589910/90212208-c530f200-ddc0-11ea-8cb8-8588ddbe7b43.png" width="20px" height="18px" />
-                &nbsp;Résumé:&nbsp;
+              <h5><span className="resumebadge badge badge-secondary" >
+              {/*
+                <img src="https://user-images.githubusercontent.com/25589910/90219242-96704700-ddd3-11ea-8522-713e08dadb45.jpg" width="20px" height="18px" />
+                  */}
+                &nbsp;Résumé&nbsp;
               </span></h5>
 
               <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button">
