@@ -33,7 +33,7 @@ render() {
           <Col md="12">
            <Card style={{borderColor: '#DFDFE1'}}>
              <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
-               <img src="https://s3.amazonaws.com/aw-personal-website-images/chat.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
+               <img src="https://user-images.githubusercontent.com/25589910/90320659-f3254c00-df10-11ea-9d1c-a26da66210cc.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
                DESCRIPTION
                <Button
                  style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px', fontWeight: '700'}}
@@ -73,7 +73,7 @@ render() {
          <Col md="12" style={{marginTop: "15px", marginBottom: '20px'}}>
            <Card style={{borderColor: '#DFDFE1'}}>
              <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
-               <img src="https://s3.amazonaws.com/aw-personal-website-images/chip.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
+               <img src="https://user-images.githubusercontent.com/25589910/90320593-9d50a400-df10-11ea-8f21-8373d49a0a7c.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
                TECH STACK
              </CardHeader>
              <CardBlock>
@@ -109,7 +109,7 @@ render() {
                  <Col md={{ size: 3, offset: 0 }} style={{marginTop: "15px"}}>
                    <Card style={{borderColor: '#DFDFE1'}}>
                      <CardHeader style={{ backgroundColor: '#17a2b8', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '1'}}>
-                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Octocat.png" width="32px" height="28px" style={{ marginRight: '10px'}} />
+                       <img src="https://user-images.githubusercontent.com/25589910/88818581-dd7ffa80-d18c-11ea-950b-6dd5f47d2d8e.png" width="32px" height="28px" style={{ marginRight: '10px'}} />
                        GitHub
                      </CardHeader>
                      <CardBlock>
@@ -123,7 +123,7 @@ render() {
                  <Col md={{ size: 3, offset: 0 }} style={{marginTop: "15px"}}>
                    <Card style={{borderColor: '#DFDFE1'}}>
                      <CardHeader style={{ backgroundColor: '#17a2b8', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '1'}}>
-                       <img src="https://s3.amazonaws.com/aw-personal-website-images/Heroku_Logo.png" width="32px" height="28px" style={{ marginTop: '0px', marginRight: '10px'}} />
+                       <img src="https://user-images.githubusercontent.com/25589910/90320400-1c44dd00-df0f-11ea-938e-c598492a17b7.png" width="32px" height="28px" style={{ marginTop: '0px', marginRight: '10px'}} />
                        Heroku
                      </CardHeader>
                      <CardBlock>
@@ -137,13 +137,13 @@ render() {
                </Row>
              </CardBlock>
            </Card>
-
+{/*
            <Row style={{marginTop: "10px"}}>
              <Col md={{size: 12, offset: 0}}>
                <EatReviewCarousal />
              </Col>
            </Row>
-
+*/}
          </Col>
        </Row>
      </Container>

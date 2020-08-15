@@ -103,7 +103,7 @@ render() {
                       fontSize: '18px',
                       fontWeight: '700',
                       opacity: '1'}} >
-                  <img src="https://s3.amazonaws.com/aw-personal-website-images/Photos_logo.png" style={{ color: 'dark', width: "40px",  marginRight: "10px"}} />
+                  <img src="https://user-images.githubusercontent.com/25589910/90320472-bc026b00-df0f-11ea-9627-31a4bdd2f1d7.png" style={{ color: 'dark', width: "40px",  marginRight: "10px"}} />
                     Photos
                 </CardHeader>
 
