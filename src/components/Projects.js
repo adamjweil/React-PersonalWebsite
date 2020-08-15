@@ -20,7 +20,7 @@ render() {
     <Container>
       <Row>
         <Col md={{size: 12}} style={{textAlign: 'center', marginTop: '10px'}}>
-          <h5><img src="https://s3.amazonaws.com/aw-personal-website-images/Project_Icon.png" style={{height: '25px', width: '25px', marginRight: '5px'}} />
+          <h5><img src="https://user-images.githubusercontent.com/25589910/90320305-139fd700-df0e-11ea-9b3f-204ac13c00ce.png" style={{height: '25px', width: '25px', marginRight: '5px'}} />
           Projects:
           <ButtonGroup style={{marginLeft: "10px"}}>
             <Button onClick={this.props.toggleCoinProject}>1</Button>

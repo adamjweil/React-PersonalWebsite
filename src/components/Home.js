@@ -43,7 +43,7 @@ render() {
             </div>
 
             <div className="email row justify-content-center">
-              <h5><span className="emailbadge badge badge-secondary">
+              <h5><span className="emailbadge badge badge-secondary" style={{height: '25px'}}>
                 {/*
                   <img src="https://user-images.githubusercontent.com/25589910/88819185-a827dc80-d18d-11ea-86bc-fde292910062.png" width="20px" height="18px" />
                     */}
@@ -53,15 +53,15 @@ render() {
             </div>
 
             <div className="resume row justify-content-center">
-              <h5><span className="resumebadge badge badge-secondary" >
+              <h5><span className="resumebadge badge badge-secondary" style={{height: '25px'}} >
               {/*
                 <img src="https://user-images.githubusercontent.com/25589910/90219242-96704700-ddd3-11ea-8522-713e08dadb45.jpg" width="20px" height="18px" />
                   */}
                 &nbsp;Résumé&nbsp;
               </span></h5>
 
-              <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button">
-                  { this.state.showResume ? "Hide" : "Show" }
+              <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button" >
+                  <span>{ this.state.showResume ? "Hide" : "Show" }</span>
               </button>
 
 
