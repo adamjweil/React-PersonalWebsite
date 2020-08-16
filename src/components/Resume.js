@@ -10,11 +10,12 @@ class Resume extends Component {
 render() {
   return(
           <div className="resume-container">
-              <button className="btn btn-outline-info" role="button" href="https://github.com/adamjweil/React-PersonalWebsite/files/5079462/Resume_aw.pdf" download >
+              <a className="btn btn-outline-info" role="button" href="https://github.com/adamjweil/React-PersonalWebsite/files/5081397/Resume.pdf" download >
                 <span style={{marginRight: '20px'}}>Download (PDF)</span>
-              </button>
+              </a>
+          
               <div>
-              <img src="https://user-images.githubusercontent.com/25589910/90321250-fc64e780-df15-11ea-8baf-3f2781315d47.png" className="resumeToPrint" media="print"></img>
+              <img src="https://user-images.githubusercontent.com/25589910/90344152-e2460a80-dfe4-11ea-8c64-daae7ef84070.png" className="resumeToPrint" media="print"></img>
             </div>
           </div>
 

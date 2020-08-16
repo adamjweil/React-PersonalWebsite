@@ -65,6 +65,17 @@ render() {
               </button>
 
             </div>
+            <hr />
+            <div className="skillsets">
+              <div className="row">
+              <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>SKILLSETS: </p>
+              <span style={{fontSize: '12px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
+                Project Management, Web, Software, and App Development, Overall Business Strategy / Direction, with Overarching Strong Leadership qualities
+              </span>
+
+
+              </div>
+            </div>
           </div>
 
           <div className="profile-text">
