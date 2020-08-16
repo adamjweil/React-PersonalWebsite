@@ -64,30 +64,47 @@ render() {
                   <span>{ this.state.showResume ? "Hide" : "Show" }</span>
               </button>
 
-
-
             </div>
           </div>
 
           <div className="profile-text">
+          <div className="row">
+            <h3 style={{textDecoration: 'underline'}}>
+              Background
+            </h3>
+          </div>
             <div className="row">
               <p className="">
-                Adam Weil loves a challenge and excels at bringing a diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems.
+                Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems              </p>
+            </div>
+            <div className="row">
+              <p>
+                Having studied business in college, worked on both the buy and sell side for a combination of 5 years (during which he earned his CFA designation, by choice), currently plays a vital role on his high school Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets
               </p>
             </div>
             <div className="row">
               <p>
-                As a trader at a small brokerage firm, he identified and executed on opportunities in the pharmaceutical and technology sectors. Adam co-founded a web-based apparel business, focusing on the site development and offshore product manufacture. That experience captivated Adam's enthusiasm for technology, specifically web and software development. As a result, he decided to strengthen his skills by attending a Fullstack Web Development program at Dev Bootcamp. Through the completion of this program Adam's proficiency as a developer grew exponentially.
+                During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and its growing impact on so many sectors. His hobby of basic HTML and website development soon turned into a calling of sorts
               </p>
             </div>
             <div className="row">
               <p>
-                Adam is looking for opportunities to capitalize on his experience in finance and passion for technology, whether that be as a member of a growing start-up, or in a more mature established business. Adam brings both strong technical and interpersonal skills into whatever environment he finds himself in.
+                Adam then made the decision to leave Apex, and spent the next year attending an intensive Fullstack Web & Software development program at Dev Bootcamp, in downtown NYC. Through the completion of this program Adam's proficiency as a developer grew exponentially
               </p>
             </div>
             <div className="row">
               <p>
-                In addition to his passion and involvement in the tech community, Adam actively participates in a number of other pursuits. He is a certified Chartered Financial Analyst, and has volunteered his time in support of certain CFA Program activities. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active Investment Committee member of schools endowment. In his leisure time he enjoys traveling, playing golf, snowboarding, water sports, and spending time with friends and family.
+                Upon finishing this program Adam joined a mid-sized, growing company called MezocliQ, as a Data Architect. After spending about six months integrating myself into the company, I was able to quickly increase communication between the Product and the Engineering teams. The company was in need of Project Managers at the time, so for the next six months I split my time between managing projects and continuing to design systems on Data Architecture team
+              </p>
+            </div>
+            <div className="row">
+              <p>
+                It quickly became clear that I had a big competitive advantage when it came to be managing projects and communicating with teams across the company. I took on the role of Project Manager full time after about a year at the company. I excelled in this position because I was able to interface with engineers on a certain level, where without software and coding specific knowledge can go a long way. I found virtually project was being hampered by this communication gap, and was quickly able to notify other Project Managers, and increase efficiencies across the board
+              </p>
+            </div>
+            <div className="row">
+              <p>
+                In addition to his passion and involvement in the tech community, Adam actively participates in several other pursuits. As mentioned above, he is a Chartered Financial Analyst, and volunteers his time in support of various CFA Program activities. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active member of the Board. In his leisure time he enjoys traveling, playing golf, snowboarding, water sports, paragliding, motorcycles, and spending time with friends and family
               </p>
             </div>
           </div>
