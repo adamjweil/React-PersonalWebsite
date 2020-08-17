@@ -68,7 +68,9 @@ render() {
             <hr />
             <div className="skillsets">
               <div className="row">
-              <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>SKILLSETS: </p>
+                <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>
+                  SKILLSETS:
+                </p>
               <span style={{fontSize: '12px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
                 Project Management, Web, Software, and App Development, Overall Business Strategy / Direction, with Overarching Strong Leadership qualities
               </span>
@@ -76,47 +78,87 @@ render() {
 
               </div>
             </div>
+            <hr />
+            <div class="row">
+              <div className="strenths">
+                <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>
+                  STRENGTHS:
+                </p>
+                <span style={{fontSize: '12px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
+                  xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz,
+                </span>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div className="goals">
+              <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>
+                GOALS:
+              </p>
+              <span style={{fontSize: '12px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
+                xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz,
+              </span>
+              </div>
+            </div>
           </div>
+
 
           <div className="profile-text">
           <div className="row">
-            <h3 style={{textDecoration: 'underline'}}>
-              Background
+            <h3 style={{textDecoration: '', color: 'grey', opacity: 0.4}}>
+              Professional Background
             </h3>
           </div>
-            <div className="row">
-              <p className="">
-                Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems              </p>
-            </div>
-            <div className="row">
+          <div className='prof-content' style={{marginLeft: '10px'}}>
+
+
+            <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                Having studied business in college, worked on both the buy and sell side for a combination of 5 years (during which he earned his CFA designation, by choice), currently plays a vital role on his high school Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets
+                Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems.
               </p>
             </div>
-            <div className="row">
+              <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and its growing impact on so many sectors. His hobby of basic HTML and website development soon turned into a calling of sorts
+                Having studied business in college, worked on both the buy and sell side for a combination of 5 yrs (during which he earned his CFA designation, by choice), while currently playing a vital role on his high school Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets.
               </p>
             </div>
-            <div className="row">
+              <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                Adam then made the decision to leave Apex, and spent the next year attending an intensive Fullstack Web & Software development program at Dev Bootcamp, in downtown NYC. Through the completion of this program Adam's proficiency as a developer grew exponentially
+                During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and its growing impact on so many sectors. His hobby of basic HTML and website development soon turned into much more.
               </p>
             </div>
-            <div className="row">
+              <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                Upon finishing this program Adam joined a mid-sized, growing company called MezocliQ, as a Data Architect. After spending about six months integrating myself into the company, I was able to quickly increase communication between the Product and the Engineering teams. The company was in need of Project Managers at the time, so for the next six months I split my time between managing projects and continuing to design systems on Data Architecture team
+                Adam made the decision to leave Apex, and spent the next year attending an intensive Fullstack Web & Software development program at Dev Bootcamp, in downtown NYC. Through the completion of this program Adam's proficiency as a developer grew exponentially.
               </p>
             </div>
-            <div className="row">
+            <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                It quickly became clear that I had a big competitive advantage when it came to be managing projects and communicating with teams across the company. I took on the role of Project Manager full time after about a year at the company. I excelled in this position because I was able to interface with engineers on a certain level, where without software and coding specific knowledge can go a long way. I found virtually project was being hampered by this communication gap, and was quickly able to notify other Project Managers, and increase efficiencies across the board
+                Upon completion of the program, Adam joined a mid-sized (~100 ppl), growing company called MezocliQ, as a Data Architect. After spending about six months integrating himself into the company, he was able to quickly increase communication between the Product and the Engineering teams. The decision was then made, that for the next six months he would split his time between managing projects and continuing to design systems on Data Architecture team.
               </p>
             </div>
-            <div className="row">
+            <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                In addition to his passion and involvement in the tech community, Adam actively participates in several other pursuits. As mentioned above, he is a Chartered Financial Analyst, and volunteers his time in support of various CFA Program activities. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active member of the Board. In his leisure time he enjoys traveling, playing golf, snowboarding, water sports, paragliding, motorcycles, and spending time with friends and family
+                Through his exposure to this new role, Adam quickly saw that his previous experience gave him a competitive advantage when it came to managing projects and communicating with teams across the company. After a full year at MezocliQ, he took on the role of Project Manager full time. He excelled in this position because interfacing with engineers came extremely easily to him, due to the software and coding specific knowledge he had since acquired, combined with his ability to easily identify where opportunistic business situations presented themselves.
               </p>
+            </div>
+          </div>
+            <div className="row">
+              <h3 style={{textDecoration: '', color: 'grey', opacity: 0.4}}>
+                Personal Interests
+              </h3>
+            </div>
+            <div className='prof-content' style={{marginLeft: '10px'}}>
+              <div className="row">
+                <p>
+                  In addition to his passion and involvement in the tech community, Adam actively participates in several other pursuits. As mentioned above, he is a Chartered Financial Analyst, and volunteers his time in support of various CFA programs. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active member of their Board.
+                </p>
+              </div>
+              <div className="row">
+                <p>
+                  In his leisure time, he enjoys traveling, playing golf, snowboarding, water sports, paragliding (new hobby), building and repairing motorcycles (and riding them, of course…), and spending time with friends and family
+                </p>
+              </div>
             </div>
           </div>
 
