@@ -68,11 +68,11 @@ render() {
             <hr />
             <div className="skillsets">
               <div className="row">
-                <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>
-                  SKILLSETS:
+                <p style={{textDecoration: '', marginBottom: '0px', marginLeft: '10px'}}>
+                <strong>SKILLSETS</strong>
                 </p>
-              <span style={{fontSize: '12px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
-                Project Management, Web, Software, and App Development, Overall Business Strategy / Direction, with Overarching Strong Leadership qualities
+              <span style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
+                Project Management, Web, Software, and App Development, Overall Business Strategy / Direction, Finance, Accounting, Financial Markets/Instruments, Real Estate
               </span>
 
 
@@ -81,15 +81,18 @@ render() {
             <hr />
             <div class="row">
               <div className="strenths">
-                <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>
-                  STRENGTHS:
+                <p style={{textDecoration: '', marginBottom: '0px', marginLeft: '10px'}}>
+                  <strong>STRENGTHS</strong>
                 </p>
-                <span style={{fontSize: '12px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
-                  xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz, xyz,
-                </span>
+                <div style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
+                  Strong leadership qualities, Analytical and problem solving skills, Excel at communication and team buiilding, Organized, & extremely focused on time management and overall productivity
+                </div>
               </div>
             </div>
+
+            {/*
             <hr />
+
             <div class="row">
               <div className="goals">
               <p style={{textDecoration: 'underline', marginBottom: '3px', marginLeft: '10px'}}>
@@ -100,6 +103,7 @@ render() {
               </span>
               </div>
             </div>
+            */}
           </div>
 
 
@@ -169,6 +173,7 @@ render() {
           </div>
 
         </div>
+        <Footer />
       </div>
     );
   }
