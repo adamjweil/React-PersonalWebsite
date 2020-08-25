@@ -10,6 +10,8 @@ class Navigation extends React.Component {
     };
     this.toggle = this.toggle.bind(this);
   }
+
+
   toggle() {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
@@ -27,10 +29,10 @@ class Navigation extends React.Component {
           <li className="nav-item">
             <NavLink className="nav-link" exact to="/resume">R&Eacute;SUM&Eacute; </NavLink>
           </li>
-          {/*
 
+          {/*
           <li className="nav-item">
-          <NavLink className="nav-link" exact to="/edu">EDU</NavLink>
+          <NavLink className="nav-link" exact to="/interests">INTERESTS</NavLink>
           </li>
 
           <li className="nav-item">
