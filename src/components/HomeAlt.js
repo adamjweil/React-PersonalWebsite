@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Label, Button } from 'reactstrap';
+import { Label, Button, Container, Col, Row, Card, CardHeader, CardTitle, CardBlock, CardText, Button, CardColumns, CardSubtitle, CardBody, Collapse } from 'reactstrap';
 
 import Footer from './Footer';
 import Resume from './Resume';
@@ -22,7 +22,8 @@ this.setState(prevState => ({
 
 render() {
   return(
-      <div className="container-fluid">
+      <Container>
+        <Col md="3">
         <div className="profile-row">
           <div className="profile-view">
             <div className="avatar-row">
@@ -43,17 +44,17 @@ render() {
             </div>
 
             <div className="email row justify-content-center">
-              <h5><span className="emailbadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9'}}>
+              <h5><span className="emailbadge badge badge-secondary" style={{height: '25px'}}>
                 {/*
                   <img src="https://user-images.githubusercontent.com/25589910/88819185-a827dc80-d18d-11ea-86bc-fde292910062.png" width="20px" height="18px" />
                     */}
                 &nbsp;Email&nbsp;
               </span></h5>
-              <a className="nav-link" href="mailto:adamjweil@gmail.com" style={{marginTop: '1px', fontSize: '18px', fontWeight: '600'}}>  AdamJWeil@gmail.com</a>
+              <a className="nav-link" href="mailto:adamjweil@gmail.com" style={{marginTop: '5px'}}>  AdamJWeil@gmail.com</a>
             </div>
 
             <div className="resume row justify-content-center">
-              <h5><span className="resumebadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9'}} >
+              <h5><span className="resumebadge badge badge-secondary" style={{height: '25px'}} >
               {/*
                 <img src="https://user-images.githubusercontent.com/25589910/90219242-96704700-ddd3-11ea-8522-713e08dadb45.jpg" width="20px" height="18px" />
                   */}
@@ -72,7 +73,7 @@ render() {
                 <strong>SKILLSETS</strong>
                 </p>
               <span style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
-                Product Management -- Web, Software, and App Development -- Project Management -- Overall Business Strategy / Direction -- Finance -- Accounting -- Financial Markets / Instruments -- Real Estate
+                Project Management, Web, Software, and App Development, Overall Business Strategy / Direction, Finance, Accounting, Financial Markets/Instruments, Real Estate
               </span>
 
 
@@ -85,10 +86,7 @@ render() {
                   <strong>STRENGTHS</strong>
                 </p>
                 <div style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
-                  <p style={{marginBottom: '0px'}}><strong>-></strong> Strong leadership qualities</p>
-                  <p style={{marginBottom: '0px'}}><strong>-></strong> Analytically inclinded; robust problem solving skills</p>
-                  <p style={{marginBottom: '0px'}}><strong>-></strong> Excel at team building and creating clear open lines of communication</p>
-                  <p style={{marginBottom: '0px'}}><strong>-></strong> Organized, and extremely focused on overall productivity (including time and resource management, amoung others)</p>
+                  Strong leadership qualities, Analytical and problem solving skills, Excel at communication and team buiilding, Organized, & extremely focused on time management and overall productivity
                 </div>
               </div>
             </div>
@@ -126,12 +124,12 @@ render() {
             </div>
               <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                Having studied business in college, worked on both the buy and sell side for a combination of 5 yrs (during which he earned his CFA designation, outside of work), while remaining actively involved in his High School Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets.
+                Having studied business in college, worked on both the buy and sell side for a combination of 5 yrs (during which he earned his CFA designation, by choice), while currently playing a vital role on his high school Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets.
               </p>
             </div>
               <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and it's growing impact on so many sectors. His hobby of basic HTML and website development soon turned into much more.
+                During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and its growing impact on so many sectors. His hobby of basic HTML and website development soon turned into much more.
               </p>
             </div>
               <div className="row" style={{marginBottom: '-5px'}}>
@@ -141,7 +139,7 @@ render() {
             </div>
             <div className="row" style={{marginBottom: '-5px'}}>
               <p>
-                After finishing his final project at DevBootcamp, Adam utilized the new set of skills he had picked up over the last year, and put them to use. He quickly joined a mid-sized (~100 ppl), growing, tech company called MezocliQ, as a Data Architect. After spending roughly six months integrating himself into the company, he was able to quickly increase communication between the Product and the Engineering teams. The decision was then made, that for the next six months he would split his time between managing projects and continuing to design systems on Data Architecture team.
+                Upon completion of the program, Adam joined a mid-sized (~100 ppl), growing company called MezocliQ, as a Data Architect. After spending about six months integrating himself into the company, he was able to quickly increase communication between the Product and the Engineering teams. The decision was then made, that for the next six months he would split his time between managing projects and continuing to design systems on Data Architecture team.
               </p>
             </div>
             <div className="row" style={{marginBottom: '-5px'}}>
@@ -163,12 +161,7 @@ render() {
               </div>
               <div className="row">
                 <p>
-                  In his leisure time, he enjoys traveling, playing golf, snowboarding, water sports, paragliding (new hobby), building and repairing motorcycles (and riding them, of course…), and spending time with friends and family.
-                </p>
-              </div>
-              <div className="row">
-                <p>
-                  Adam is always interested and excited to talk about new ideas, or an iteration of an old idea, that could bear fruit. He isn't afraid to fail, as long as failure is worth the lesson. On that same note, when he sees risk moving in his favor, he doesn't hesitate make and effectuate decisions
+                  In his leisure time, he enjoys traveling, playing golf, snowboarding, water sports, paragliding (new hobby), building and repairing motorcycles (and riding them, of course…), and spending time with friends and family
                 </p>
               </div>
             </div>
@@ -182,7 +175,7 @@ render() {
 
         </div>
         <Footer />
-      </div>
+      </Container>
     );
   }
 }
