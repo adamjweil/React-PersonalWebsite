@@ -10,7 +10,7 @@ class Resume extends Component {
 render() {
   return(
           <div className="resume-container">
-              <a className="btn btn-outline-info" role="button" href="https://github.com/adamjweil/React-PersonalWebsite/files/5092771/Resume.pdf" download >
+              <a className="btn btn-outline-info" role="button" href="https://github.com/adamjweil/React-PersonalWebsite/files/5130749/Resume.pdf" download >
                 <span style={{marginRight: '20px'}}>Download (PDF)</span>
               </a>
 
