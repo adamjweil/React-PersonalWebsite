@@ -15,7 +15,7 @@ render() {
               </a>
 
               <div>
-              <img src="https://user-images.githubusercontent.com/25589910/90564146-dd16c600-e172-11ea-901d-6d504d242fa6.png" className="resumeToPrint" media="print"></img>
+              <img src="https://user-images.githubusercontent.com/25589910/91322370-a9005e00-e78d-11ea-98ea-c464fa996675.png" className="resumeToPrint" media="print"></img>
             </div>
           </div>
 
