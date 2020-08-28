@@ -54,7 +54,11 @@ class App extends Component {
               <Route exact path="/work" render={ () => <Work /> } />
               <Route exact path="/edu" render={ () => <Education /> } />
               <Route exact path="/interests" render={ () => <Interests /> } />
-              <Route exact path="/contact" render={ () => <Contact /> } />
+
+              {/*
+                <Route exact path="/contact" render={ () => <Contact /> } />
+                */}
+                
               <Route path="/Projects" render={ () =>
                   <Projects
                     activeProject={this.state.activeProject}

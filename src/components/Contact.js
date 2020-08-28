@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+// import React, { useState } from "react";
 import { NavLink } from 'react-router-dom';
 import { Container, Col, Row, Alert, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
@@ -6,17 +7,30 @@ class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      firstName: "",
-      lastName: "",
-      messageText: "",
-      phoneNumber: "",
-      emailAddress: "",
-    };
+      firstName: '',
+      lastName: '',
+      emailAddress: '',
+      phoneNumber: '',
+      messageText: ''
+    }
+
+
 }
 
-
-
 render() {
+  const [firstName, setFirstName] = React.useState("");
+  const handleSubmit = (event) => {
+      console.log(`
+        Email: ${firstName}
+      `);
+      event.preventDefault();
+    }
+    
+  function onChange(e) {
+    this.setState({
+      [e.target.name]: e.target.value
+  });
+}
   return(
     <Container>
       <Row>
@@ -33,7 +47,12 @@ render() {
             <Row>
             <Col md="6" sm="6">
               <FormGroup>
-               <Input type="email" name="email" id="firstName" placeholder="First Name" />
+               <Input
+                onChange={e => setFirstName(e.target.value)}
+                type="email"
+                name="firstName"
+                id="firstName"
+                placeholder="First Name" />
               </FormGroup>
            </Col>
            </Row>
@@ -41,7 +60,12 @@ render() {
            <Row>
              <Col md="6" sm="6">
                <FormGroup>
-                <Input type="email" name="email" id="lastName" placeholder="Last Name" />
+                <Input
+                onChange={e => onChange(e)}
+                type="email"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name" />
                </FormGroup>
              </Col>
            </Row>
@@ -50,7 +74,7 @@ render() {
               <Col md="12">
                 <FormGroup>
                   <Label for="messageText">How can I help you?</Label>
-                  <Input type="textarea" name="text" id="messageText" style={{height: 100}} />
+                  <Input type="textarea" name="messageText" id="messageText" style={{height: 100}} />
                 </FormGroup>
               </Col>
            </Row>
@@ -65,7 +89,12 @@ render() {
              <Col md="6" sm="6">
                <FormGroup>
                 <Label for="phoneNumber">Phone:</Label>
-                <Input type="phone" name="email" id="phoneNumber" placeholder="(123) 456-7891" />
+                <Input
+
+                  type="phone"
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  placeholder="(123) 456-7891" />
                </FormGroup>
              </Col>
            </Row>
@@ -73,7 +102,7 @@ render() {
              <Col md="6" sm="6">
                <FormGroup>
                 <Label for="emailAddress">Email:</Label>
-                <Input type="phone" name="email" id="emailAddress" placeholder="joe@gmail.com" />
+                <Input type="phone" name="emailAddress" id="emailAddress" placeholder="joe@gmail.com" />
                </FormGroup>
              </Col>
            </Row>
