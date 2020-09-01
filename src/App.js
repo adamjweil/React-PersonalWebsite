@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import Home from './components/Home';
-// import HomeAlt from './components/HomeAlt';
+import HomeAlt from './components/HomeAlt';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Work from './components/Work';

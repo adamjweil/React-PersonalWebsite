@@ -179,7 +179,6 @@ render() {
               { this.state.showResume ? <Resume /> : null }
             </div>
           </div>
-
         </div>
         <Footer />
       </div>
