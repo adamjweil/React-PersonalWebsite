@@ -11,14 +11,21 @@ class Home extends Component {
     this.state =
       {
     showResume: false,
-    collapse: false
+    collapseProfessional: true,
+    collapsePersonal: true
   }
   this.handleToggleResume = this.handleToggleResume.bind(this);
-  this.toggleDescription = this.toggleDescription.bind(this);
+  this.toggleProfessional = this.toggleProfessional.bind(this);
+  this.togglePersonal = this.togglePersonal.bind(this);
 }
-toggleDescription() {
+toggleProfessional() {
   this.setState({
-    collapse: !this.state.collapse
+    collapseProfessional: !this.state.collapseProfessional
+  });
+}
+togglePersonal() {
+  this.setState({
+    collapsePersonal: !this.state.collapsePersonal
   });
 }
 
@@ -32,9 +39,8 @@ render() {
 
     <Container>
       <Row>
-
         <Col md="4">
-        <div className="profile-view">
+          <div className="profile-view">
           <Row>
             <div className="avatar-row">
               <img src="https://user-images.githubusercontent.com/25589910/88818074-47e46b00-d18c-11ea-8e3c-e90fa99b8622.jpg" width="360px" height="270px">
@@ -42,19 +48,22 @@ render() {
             </div>
           </Row>
           <Row>
-            <Col md="6">
-              <a href="https://www.linkedin.com/in/adamjweil/" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true">
-                <img src="https://user-images.githubusercontent.com/25589910/88818435-b3c6d380-d18c-11ea-8ec5-a399392334f6.png" width="18px" height="18px" />
+            <Col md="12">
+              <a href="https://www.linkedin.com/in/adamjweil/" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true" style={{marginBottom:"10px"}}>
+                <img src="https://user-images.githubusercontent.com/25589910/88818435-b3c6d380-d18c-11ea-8ec5-a399392334f6.png" width="20px" height="18px"  />
                 &nbsp;&nbsp;LinkedIn
               </a>
             </Col>
-            <Col md="6">
+            <Row>
+            </Row>
+            <Col md="12">
               <a href="https://github.com/adamjweil" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true">
-                <img src="https://user-images.githubusercontent.com/25589910/88818581-dd7ffa80-d18c-11ea-950b-6dd5f47d2d8e.png" width="25px" height="25px" />
+                <img src="https://user-images.githubusercontent.com/25589910/88818581-dd7ffa80-d18c-11ea-950b-6dd5f47d2d8e.png" width="24px" height="20px" />
                 &nbsp;&nbsp;GitHub&nbsp;
               </a>
             </Col>
           </Row>
+
           <Row>
             <h5><span className="emailbadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9'}}>
               &nbsp;Email&nbsp;
@@ -65,7 +74,7 @@ render() {
           <h5><span className="resumebadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9'}} >
             &nbsp;Résumé&nbsp;
           </span></h5>
-          <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button" >
+          <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button" style={{width: "75px", height: "30px", marginLeft: "10px", marginTop: '7px'}} >
               <span>{ this.state.showResume ? "Hide" : "Show" }</span>
           </button>
           </Row>
@@ -92,12 +101,13 @@ render() {
                 <p style={{marginBottom: '0px'}}><strong>-></strong> Organized, and extremely focused on overall productivity (including time and resource management, amoung others)</p>
               </div>
             </div>
-          </Row>
+            </Row>
           </div>
-        </Col>
-        // <Col md="1"></Col>
-        <Col md="6">
-        <Card style={{borderColor: '#DFDFE1'}}>
+          </Col>
+
+        <Col md="1"></Col>
+        <Col md="7">
+        <Card style={{borderColor: '#DFDFE1', marginTop: "15px"}}>
           <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
           <img src="https://user-images.githubusercontent.com/25589910/90320659-f3254c00-df10-11ea-9d1c-a26da66210cc.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
            Professional Background
@@ -105,12 +115,12 @@ render() {
              style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px', fontWeight: '700'}}
              color="success"
              size="sm"
-             onClick={this.toggleDescription}>
-             { this.state.collapse ? "Hide Full" : "Show Full" }
+             onClick={this.toggleProfessional}>
+             { this.state.collapseProfessional ? "Hide Full" : "Show Full" }
            </Button>
          </CardHeader>
            <CardBlock>
-             <Collapse isOpen={this.state.collapse}>
+             <Collapse isOpen={this.state.collapseProfessional}>
                <CardText>
                  <Row style={{margin: '5px 5px 15px'}}>
                   Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems.
@@ -138,7 +148,7 @@ render() {
                </CardText>
              </Collapse>
 
-             <Collapse isOpen={!this.state.collapse}>
+             <Collapse isOpen={!this.state.collapseProfessional}>
                <CardText>
                  <Row style={{margin: '5px 5px 10px'}}>
                   Brief Description   (Professional)
@@ -148,8 +158,12 @@ render() {
 
            </CardBlock>
          </Card>
+         </Col>
+         </Row>
          <Row>
-         <Card style={{borderColor: '#DFDFE1'}}>
+
+
+         <Card style={{borderColor: '#DFDFE1', marginTop: '10px'}}>
            <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
            <img src="https://user-images.githubusercontent.com/25589910/90320659-f3254c00-df10-11ea-9d1c-a26da66210cc.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
             Personal Interests
@@ -157,12 +171,12 @@ render() {
               style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px', fontWeight: '700'}}
               color="success"
               size="sm"
-              onClick={this.toggleDescription}>
-              { this.state.collapse ? "Hide Full" : "Show Full" }
+              onClick={this.togglePersonal}>
+              { this.state.collapsePersonal ? "Hide Full" : "Show Full" }
             </Button>
           </CardHeader>
             <CardBlock>
-              <Collapse isOpen={this.state.collapse}>
+              <Collapse isOpen={this.state.collapsePersonal}>
                 <CardText>
                   <Row style={{margin: '5px 5px 15px'}}>
                     In addition to his passion and involvement in the tech community, Adam actively participates in several other pursuits. As mentioned above, he is a Chartered Financial Analyst, and volunteers his time in support of various CFA programs. He maintains a very strong relationship with his High School alma mater, Carrabassett Valley Academy, and is an active member of their Board.
@@ -186,8 +200,18 @@ render() {
 
             </CardBlock>
           </Card>
+      
          </Row>
-        </Col>
+      <Row>
+
+          <Col md={12}>
+            <div className="resume-view">
+              <div className="row">
+                { this.state.showResume ? <Resume /> : null }
+              </div>
+            </div>
+          </Col>
+
       </Row>
     </Container>
     );
