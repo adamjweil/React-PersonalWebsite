@@ -52,6 +52,11 @@ render() {
           </div>
         </Col>
       </Row>
+      <Row>
+       <Col md="12">
+        <span style={{textAlign: 'center'}}> &copy; {new Date().getFullYear()} Copyright: <a href="https://adamjweil.net"> AdamJWeil.net </a></span>
+       </Col>
+     </Row>
     </Container>
     );
   }

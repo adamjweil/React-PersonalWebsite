@@ -50,7 +50,7 @@ class App extends Component {
             toggleAltSetup={this.toggleAltSetup} />
 
             <Switch>
-              <Route exact path="/" render={ () => <Home /> } />
+              <Route exact path="/" render={ () => <HomeAlt /> } />
               <Route exact path="/resume" render={ () => <Resume /> } />
               <Route exact path="/work" render={ () => <Work /> } />
               <Route exact path="/edu" render={ () => <Education /> } />
@@ -72,6 +72,7 @@ class App extends Component {
               <Route path="/Contact" render={ () => <Contact /> } />
             </Switch>
           </div>
+          
       </BrowserRouter>
 
     );
