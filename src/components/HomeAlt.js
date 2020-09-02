@@ -85,10 +85,10 @@ render() {
 
           <Row>
             <p style={{textDecoration: '', marginBottom: '0px', marginLeft: '10px'}}>
-            <strong>SKILLSETS</strong>
+            <strong>SKILL SETS</strong>
             </p>
             <span style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
-              Product Management -- Web, Software, and App Development -- Project Management -- Overall Business Strategy / Direction -- Finance -- Accounting -- Financial Markets / Instruments -- Real Estate
+              Product Management -- Web, Software, and App Development -- Project Management -- Overall Business Strategy/Direction -- Finance -- Accounting -- Financial Markets/Instruments -- Real Estate
             </span>
           </Row>
           <Row>
@@ -127,27 +127,27 @@ render() {
              <Collapse isOpen={this.state.collapseProfessional}>
                <CardText>
                  <Row style={{margin: '5px 5px 15px'}}>
-                  Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems
+                  Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems.
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 Having studied business in college, worked on both the buy and sell side for a combination of 5 yrs (during which he earned his CFA designation, outside of work), while remaining actively involved in his High School Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets
+                 Having studied business in college, worked on both the buy and sell side for a combination of 5 yrs (during which he earned his CFA designation, outside of work), while remaining actively involved in his High School Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets.
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and it's growing impact on so many sectors. His hobby of basic HTML and website development soon turned into much more
+                 During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and it's growing impact on so many sectors. His hobby of basic HTML and website development soon turned into much more.
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 Adam made the decision to leave Apex, and spent the next year attending an intensive Fullstack Web & Software development program at Dev Bootcamp, in downtown NYC. Through the completion of this program Adam's proficiency as a developer grew exponentially
+                 Adam made the decision to leave Apex, and spent the next year attending an intensive Fullstack Web & Software development program at Dev Bootcamp, in downtown NYC. Through the completion of this program Adam's proficiency as a developer grew exponentially.
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 After finishing his final project at DevBootcamp, Adam utilized the new set of skills he had picked up over the last year, and put them to use. He quickly joined a mid-sized (~100 ppl), growing, tech company called MezocliQ, as a Data Architect. After spending roughly six months integrating himself into the company, he was able to quickly increase communication between the Product and the Engineering teams. The decision was then made, that for the next six months he would split his time between managing projects and continuing to design systems on Data Architecture team
+                 After finishing his final project at DevBootcamp, Adam utilized the new set of skills he had picked up over the last year, and put them to use. He quickly joined a mid-sized (~100 ppl), growing, tech company called MezocliQ, as a Data Architect. After spending roughly six months integrating himself into the company, he was able to quickly increase communication between the Product and the Engineering teams. The decision was then made, that for the next six months he would split his time between managing projects and continuing to design systems on Data Architecture team.
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                   Through his exposure to this new role, Adam quickly saw that his previous experience gave him a competitive advantage when it came to managing projects and communicating with teams across the company. After a full year at MezocliQ, he took on the role of Project Manager full time. He excelled in this position because interfacing with engineers came extremely easily to him, due to the software and coding specific knowledge he had since acquired, combined with his ability to easily identify where opportunistic business situations presented themselves
+                   Through his exposure to this new role, Adam quickly saw that his previous experience gave him a competitive advantage when it came to managing projects and communicating with teams across the company. After a full year at MezocliQ, he took on the role of Project Manager full time. He excelled in this position because interfacing with engineers came extremely easily to him, due to the software and coding specific knowledge he had since acquired, combined with his ability to easily identify where opportunistic business situations presented themselves.
                  </Row>
                </CardText>
              </Collapse>
@@ -155,7 +155,7 @@ render() {
              <Collapse isOpen={!this.state.collapseProfessional}>
                <CardText>
                  <Row style={{margin: '5px 5px 10px'}}>
-                    After gratuating from GWU in 2011 with his BBA in Finance, Adam spent ~2.5 yrs working at Nomura as both a Credit and Equity Analyst. He participated in a rotational program, which allowed him to work with various teams across both Trading Floors
+                    After gratuating from GWU in 2011 with his BBA in Finance, Adam spent ~2.5 yrs working at Nomura as both a Credit and Equity Analyst. He participated in a rotational program, which allowed him to work with various teams across both Trading Floors.
                  </Row>
                  <Row style={{margin: '5px 5px 10px'}}>
                     In 2014, along with completing the CFA Program, Adam started a new job at Apex Capital, focused on managing a (long / short) portfolio of US Equities. Over the course of the next 2 and a half years, he gained immense experience and exposure to market dynamics, while working as a an Executing Trader on Apex's Event Driven strategy/team.
@@ -193,7 +193,7 @@ render() {
                     In his leisure time, he enjoys traveling, playing golf, snowboarding, water sports, paragliding (new hobby), building and repairing motorcycles (and riding them, of course…), and spending time with friends and family.
                   </Row>
                   <Row style={{margin: '5px 5px 15px'}}>
-                    Adam is always interested and excited to talk about new ideas, or an iteration of an old idea, that could bear fruit. He isn't afraid to fail, as long as failure is worth the lesson. On that same note, when he sees risk moving in his favor, he doesn't hesitate make and effectuate decisions
+                    Adam is always interested and excited to talk about new ideas, or an iteration of an old idea, that could bear fruit. He isn't afraid to fail, as long as failure is worth the lesson. On that same note, when he sees risk moving in his favor, he doesn't hesitate make and effectuate decisions.
                   </Row>
                 </CardText>
               </Collapse>
