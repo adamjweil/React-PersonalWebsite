@@ -69,10 +69,10 @@ render() {
             <div className="skillsets">
               <div className="row">
                 <p style={{textDecoration: '', marginBottom: '0px', marginLeft: '10px'}}>
-                <strong>SKILLSETS</strong>
+                <strong>SKILL SETS</strong>
                 </p>
               <span style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
-                Product Management -- Web, Software, and App Development -- Project Management -- Overall Business Strategy / Direction -- Finance -- Accounting -- Financial Markets / Instruments -- Real Estate
+                Product Management -- Web, Software, and App Development -- Project Management -- Overall Business Strategy/Direction -- Finance -- Accounting -- Financial Markets/Instruments -- Real Estate
               </span>
 
 
