@@ -65,22 +65,24 @@ render() {
           </Row>
 
           <Row>
-            <h5><span className="emailbadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9'}}>
+            <h5><span className="emailbadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9', marginLeft: '20px'}}>
               &nbsp;Email&nbsp;
             </span></h5>
             <a className="nav-link" href="mailto:adamjweil@gmail.com" style={{marginTop: '1px', fontSize: '18px', fontWeight: '600'}}>  AdamJWeil@gmail.com</a>
           </Row>
           <Row>
-          <h5><span className="resumebadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9'}} >
-            &nbsp;Résumé&nbsp;
-          </span></h5>
-          <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button" style={{width: "75px", height: "30px", marginLeft: "10px", marginTop: '7px'}} >
-              <span>{ this.state.showResume ? "Hide" : "Show" }</span>
+          <h5>
+            <span className="resumebadge badge badge-secondary" style={{height: '27px', border: '2px outset #A9A9A9', marginLeft: '20px'}} >
+              &nbsp;Résumé&nbsp;
+            </span>
+          </h5>
+
+          <button onClick={this.handleToggleResume} className="btn btn-outline-info" role="button" style={{width: "75px", height: "30px", marginLeft: "30px", marginTop: '10px'}} >
+              <span style={{marginTop: '-100px'}}>{ this.state.showResume ? "Hide" : "Show" }</span>
           </button>
+
           </Row>
-          <Row>
-            <hr />
-          </Row>
+
           <Row>
             <p style={{textDecoration: '', marginBottom: '0px', marginLeft: '10px'}}>
             <strong>SKILLSETS</strong>
@@ -105,45 +107,47 @@ render() {
           </div>
           </Col>
 
-        <Col md="1"></Col>
-        <Col md="7">
+
+        <Col md="8">
         <Card style={{borderColor: '#DFDFE1', marginTop: "15px"}}>
           <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
-          <img src="https://user-images.githubusercontent.com/25589910/90320659-f3254c00-df10-11ea-9d1c-a26da66210cc.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
+          <img src="https://user-images.githubusercontent.com/25589910/91918504-154cf700-ec91-11ea-9b75-68821a74f273.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
            Professional Background
+           {/* */}
            <Button
              style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px', fontWeight: '700'}}
              color="success"
              size="sm"
              onClick={this.toggleProfessional}>
-             { this.state.collapseProfessional ? "Hide Full" : "Show Full" }
+             { this.state.collapseProfessional ? "Show Brief" : "Show Full" }
            </Button>
+           {/*   */}
          </CardHeader>
            <CardBlock>
              <Collapse isOpen={this.state.collapseProfessional}>
                <CardText>
                  <Row style={{margin: '5px 5px 15px'}}>
-                  Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems.
+                  Adam Weil relishes a challenge and excels at bringing his diverse array of skills to each situation. Driven by a strong entrepreneurial personality, Adam thrives at generating and applying unique approaches to solve complex problems
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 Having studied business in college, worked on both the buy and sell side for a combination of 5 yrs (during which he earned his CFA designation, outside of work), while remaining actively involved in his High School Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets.
+                 Having studied business in college, worked on both the buy and sell side for a combination of 5 yrs (during which he earned his CFA designation, outside of work), while remaining actively involved in his High School Alma Matter’s Board, is it safe to say that Adam has a very strong background with financial markets
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and it's growing impact on so many sectors. His hobby of basic HTML and website development soon turned into much more.
+                 During his time working as a trader on Apex’s Event Driven team, Adam became increasingly passionate about, and enthusiastic about the role of technology, and it's growing impact on so many sectors. His hobby of basic HTML and website development soon turned into much more
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 Adam made the decision to leave Apex, and spent the next year attending an intensive Fullstack Web & Software development program at Dev Bootcamp, in downtown NYC. Through the completion of this program Adam's proficiency as a developer grew exponentially.
+                 Adam made the decision to leave Apex, and spent the next year attending an intensive Fullstack Web & Software development program at Dev Bootcamp, in downtown NYC. Through the completion of this program Adam's proficiency as a developer grew exponentially
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                 After finishing his final project at DevBootcamp, Adam utilized the new set of skills he had picked up over the last year, and put them to use. He quickly joined a mid-sized (~100 ppl), growing, tech company called MezocliQ, as a Data Architect. After spending roughly six months integrating himself into the company, he was able to quickly increase communication between the Product and the Engineering teams. The decision was then made, that for the next six months he would split his time between managing projects and continuing to design systems on Data Architecture team.
+                 After finishing his final project at DevBootcamp, Adam utilized the new set of skills he had picked up over the last year, and put them to use. He quickly joined a mid-sized (~100 ppl), growing, tech company called MezocliQ, as a Data Architect. After spending roughly six months integrating himself into the company, he was able to quickly increase communication between the Product and the Engineering teams. The decision was then made, that for the next six months he would split his time between managing projects and continuing to design systems on Data Architecture team
                  </Row>
 
                  <Row style={{margin: '5px 5px 15px'}}>
-                   Through his exposure to this new role, Adam quickly saw that his previous experience gave him a competitive advantage when it came to managing projects and communicating with teams across the company. After a full year at MezocliQ, he took on the role of Project Manager full time. He excelled in this position because interfacing with engineers came extremely easily to him, due to the software and coding specific knowledge he had since acquired, combined with his ability to easily identify where opportunistic business situations presented themselves.
+                   Through his exposure to this new role, Adam quickly saw that his previous experience gave him a competitive advantage when it came to managing projects and communicating with teams across the company. After a full year at MezocliQ, he took on the role of Project Manager full time. He excelled in this position because interfacing with engineers came extremely easily to him, due to the software and coding specific knowledge he had since acquired, combined with his ability to easily identify where opportunistic business situations presented themselves
                  </Row>
                </CardText>
              </Collapse>
@@ -151,29 +155,33 @@ render() {
              <Collapse isOpen={!this.state.collapseProfessional}>
                <CardText>
                  <Row style={{margin: '5px 5px 10px'}}>
-                  Brief Description   (Professional)
+                    After gratuating from GWU in 2011 with his BBA in Finance, Adam spent ~2.5 yrs working at Nomura as both a Credit and Equity Analyst. He participated in a rotational program, which allowed him to work with various teams across both Trading Floors
                  </Row>
+                 <Row style={{margin: '5px 5px 10px'}}>
+                    In 2014, along with completing the CFA Program, Adam started a new job at Apex Capital, focused on managing a (long / short) portfolio of US Equities. Over the course of the next 2 and a half years, he gained immense experience and exposure to market dynamics, while working as a an Executing Trader on Apex's Event Driven strategy/team.
+                  </Row>
+                     <Row style={{margin: '5px 5px 10px'}}>
+                    Adam has spent the last 4 - 5 years working in technology, specifically as a Product Manager, Data Architecht, and Software Engineer.
+                  </Row>
                </CardText>
              </Collapse>
 
            </CardBlock>
          </Card>
-         </Col>
-         </Row>
-         <Row>
-
 
          <Card style={{borderColor: '#DFDFE1', marginTop: '10px'}}>
            <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
-           <img src="https://user-images.githubusercontent.com/25589910/90320659-f3254c00-df10-11ea-9d1c-a26da66210cc.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
+           <img src="https://user-images.githubusercontent.com/25589910/91918553-33b2f280-ec91-11ea-90df-2519b383b426.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
             Personal Interests
+            {/*
             <Button
               style={{opacity: '1', marginLeft: '20px', borderRadius: '5px', fontSize: '12px', fontWeight: '700'}}
               color="success"
               size="sm"
               onClick={this.togglePersonal}>
-              { this.state.collapsePersonal ? "Hide Full" : "Show Full" }
+              { this.state.collapsePersonal ? "Show Brief" : "Show Full" }
             </Button>
+            */}
           </CardHeader>
             <CardBlock>
               <Collapse isOpen={this.state.collapsePersonal}>
@@ -190,29 +198,28 @@ render() {
                 </CardText>
               </Collapse>
 
-              <Collapse isOpen={!this.state.collapse}>
+              <Collapse isOpen={!this.state.collapsePersonal}>
                 <CardText>
                   <Row style={{margin: '5px 5px 10px'}}>
-                   Brief Description   (Personal Interests)
+                    Brief Description   (Personal Interests)
                   </Row>
                 </CardText>
               </Collapse>
 
             </CardBlock>
           </Card>
-      
-         </Row>
-      <Row>
-
-          <Col md={12}>
-            <div className="resume-view">
-              <div className="row">
-                { this.state.showResume ? <Resume /> : null }
-              </div>
-            </div>
           </Col>
-
-      </Row>
+         </Row>
+          <Row>
+            <Col>
+              {this.state.showResume ? <Resume /> : ""}
+            </Col>
+          </Row>
+         <Row>
+          <Col md="12">
+          <span style={{textAlign: 'center'}}>  &copy; {new Date().getFullYear()} Copyright: <a href="https://adamjweil.net"> AdamJWeil.net </a></span>
+          </Col>
+        </Row>
     </Container>
     );
   }

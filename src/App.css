@@ -2,19 +2,20 @@
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  margin-left: 1px;
+  margin-left: 15px;
   margin-bottom: 10px;
 }
 .profile-view {
   display: inline-block;
   position: absolute;
-  /* left: 50px;
-  top: 70px; */
+  left: 0px;
+  top: 15px;
   padding: 20px;
   border: 3px solid #DFDFE1;
   background: #F4F4F4;
   width: 406px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
+  margin-left: -100px;
 }
 .container-fluid {
   background-color: #dee0e2;
@@ -50,6 +51,7 @@
 }
 .email {
   margin-top: 10px;
+  margin-left: 100px;
 }
 .emailbadge {
   opacity: .6;
