@@ -39,6 +39,7 @@ render() {
 
     <Container>
       <Row>
+      <Col md="1"></Col>
         <Col md="4">
           <div className="profile-view">
           <Row>
@@ -49,7 +50,7 @@ render() {
           </Row>
           <Row>
             <Col md="1"></Col>
-            <Col md="5">
+            <Col md="4">
               <a href="https://www.linkedin.com/in/adamjweil/" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true" style={{marginBottom:"10px", opacity: .9}}>
                 <img src="https://user-images.githubusercontent.com/25589910/88818435-b3c6d380-d18c-11ea-8ec5-a399392334f6.png" width="20px" height="18px"  />
                 &nbsp;&nbsp;LinkedIn
@@ -88,7 +89,25 @@ render() {
             <strong>SKILL SETS</strong>
             </p>
             <span style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px', marginBottom: "10px"}}>
-              Product Management -- Web, Software, and App Development -- Project Management -- Overall Business Strategy/Direction -- Finance -- Accounting -- Financial Markets/Instruments -- Real Estate
+              Product Management
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Web, Software, and App Development
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Project Management
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Overall Business Strategy/Direction
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Finance
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Accounting
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Financial Markets/Instruments
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Real Estate
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Technology
+              <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
+              Fin-Tech
             </span>
           </Row>
           <Row>
@@ -97,21 +116,21 @@ render() {
                 <strong>STRENGTHS</strong>
               </p>
               <div style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
-              <p style={{marginBottom: '0px'}}><strong>-></strong> Ability to prioritize while maintaining tight deadlines</p>
-              <p style={{marginBottom: '0px'}}><strong>-></strong> Passionate about building Products & Services that solve problems</p>
-              <p style={{marginBottom: '0px'}}><strong>-></strong> Analytically inclinded; Objectives & Key Metrics</p>
-              <p style={{marginBottom: '0px'}}><strong>-></strong> Strong leadership qualities</p>
-              <p style={{marginBottom: '0px'}}><strong>-></strong> Clear, effective communicator </p>
-              <p style={{marginBottom: '0px'}}><strong>-></strong> Organized, and extremely focused on overall productivity (including time and resource management, amoung others)</p>
-
+              <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> Ability to prioritize while maintaining tight deadlines </p>
+              <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> Passionate about building Products & Services that solve problems </p>
+              <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> A natural leader; versatile and forward thinking... always willing to be the <em>'Devil's Advocate'</em> in the room </p>
+              <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> Strong leadership qualities</p>
+              <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> Clear, effective communicator; Strongly encourages open channels of communication within his team / organization </p>
+              <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> Analytically inclinded; Objectives & Key Metrics are the cornerstone of measuring and optimizing the team's output </p>
+              <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> Organized, with a primary focus on overall productivity (including time and resource management, amoung others)</p>
               </div>
             </div>
             </Row>
           </div>
           </Col>
 
-
-        <Col md="8">
+        <Col md="1"></Col>
+        <Col md="6">
         <Card style={{borderColor: '#DFDFE1', marginTop: "15px"}}>
           <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
           <img src="https://user-images.githubusercontent.com/25589910/91918504-154cf700-ec91-11ea-9b75-68821a74f273.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
@@ -218,9 +237,11 @@ render() {
               {this.state.showResume ? <Resume /> : ""}
             </Col>
           </Row>
-         <Row>
+         <Row style={{paddingTop: '30px',alignItems: 'center', textAlign: 'center'}}>
           <Col md="12">
-          <span style={{textAlign: 'center'}}>  &copy; {new Date().getFullYear()} Copyright: <a href="https://adamjweil.net"> AdamJWeil.net </a></span>
+          <footer>
+            <span style={{}}> &copy; {new Date().getFullYear()} Copyright <a href="https://adamjweil.net"> AdamJWeil.net </a> <strong>-</strong> All Rights Reserved </span>
+            </footer>
           </Col>
         </Row>
     </Container>
