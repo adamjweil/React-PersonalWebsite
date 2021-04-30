@@ -85,9 +85,11 @@ render() {
                   <strong>STRENGTHS</strong>
                 </p>
                 <div style={{fontSize: '13px', marginTop: '5px', marginLeft: '15px', marginRight: '15px'}}>
+                  <p style={{marginBottom: '0px'}}><strong>-></strong> Ability to prioritize while maintaining tight deadlines</p>
+                  <p style={{marginBottom: '0px'}}><strong>-></strong> Passionate about building Products & Services that <underline>solve problems</underline></p>
                   <p style={{marginBottom: '0px'}}><strong>-></strong> Strong leadership qualities</p>
                   <p style={{marginBottom: '0px'}}><strong>-></strong> Analytically inclinded; robust problem solving skills</p>
-                  <p style={{marginBottom: '0px'}}><strong>-></strong> Excel at team building and creating clear open lines of communication</p>
+                  <p style={{marginBottom: '0px'}}><strong>-></strong> Clear, effective communicator </p>
                   <p style={{marginBottom: '0px'}}><strong>-></strong> Organized, and extremely focused on overall productivity (including time and resource management, amoung others)</p>
                 </div>
               </div>
