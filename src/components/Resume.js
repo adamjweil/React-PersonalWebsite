@@ -17,12 +17,12 @@ render() {
         <Row>
         <Col md="1"></Col>
           <Col md="10">
-            <a className="btn btn-outline-info" role="button" href="https://github.com/adamjweil/React-PersonalWebsite/files/5142369/Resume.pdf" download >
+            <a className="btn btn-outline-info" role="button" href="https://github.com/adamjweil/React-PersonalWebsite/files/6407182/Resume_aw.pdf" download >
               <span style={{marginRight: '20px'}}>Download (PDF)</span>
             </a>
           </Col>
             <Row>
-                <span style={{marginLeft: '100px'}}><img src="https://user-images.githubusercontent.com/25589910/91567120-9cf1d900-e912-11ea-9833-8774bd2dbe88.png" className="resumeToPrint" media="print"></img></span>
+                <span style={{marginLeft: '100px'}}><img src="https://user-images.githubusercontent.com/25589910/116735875-1d466d80-a9bd-11eb-9b89-37f77c1ba466.png" className="resumeToPrint" media="print"></img></span>
             </Row>
           <Col md="1"></Col>
         </Row>
