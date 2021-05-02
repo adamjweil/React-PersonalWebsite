@@ -32,6 +32,9 @@ class Navigation extends React.Component {
   */}
 
           <li className="nav-item">
+            <NavLink className="nav-link" exact to="/product-mgr">PRODUCT MANAGER</NavLink>
+          </li>
+          <li className="nav-item">
             <NavLink className="nav-link" exact to="/resume">R&Eacute;SUM&Eacute; </NavLink>
           </li>
 

@@ -12,6 +12,7 @@ import Resume from './components/Resume';
 import Education from './components/Education';
 import Interests from './components/Interests';
 import Footer from './components/Footer';
+import ProductMgr from './components/ProductMgr';
 
 class App extends Component {
   constructor() {
@@ -55,6 +56,7 @@ class App extends Component {
               <Route exact path="/work" render={ () => <Work /> } />
               <Route exact path="/edu" render={ () => <Education /> } />
               <Route exact path="/interests" render={ () => <Interests /> } />
+              <Route exact path="/product-mgr" render={ () => <ProductMgr /> } />
 
               {/*
                 <Route exact path="/contact" render={ () => <Contact /> } />
