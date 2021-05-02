@@ -7,14 +7,11 @@
 }
 .profile-view {
   display: inline-block;
-  position: absolute;
-  left: 0px;
-  top: 15px;
+  margin-top: 15px;
   padding: 20px;
-  border: 3px solid #DFDFE1;
+  border: 2px solid #DFDFE1;
   background: #F4F4F4;
   width: 406px;
-  /* margin-top: 20px; */
   margin-left: -100px;
 }
 .container-fluid {

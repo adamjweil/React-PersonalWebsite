@@ -129,8 +129,8 @@ render() {
           </div>
           </Col>
 
-        <Col md="1"></Col>
-        <Col md="6">
+        <Col md="0"></Col>
+        <Col md="7">
         <Card style={{borderColor: '#DFDFE1', marginTop: "15px"}}>
           <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
           <img src="https://user-images.githubusercontent.com/25589910/91918504-154cf700-ec91-11ea-9b75-68821a74f273.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
