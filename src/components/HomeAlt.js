@@ -1,9 +1,23 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Label, Button , Row, Col, Container, Card, CardBody, Collapse, CardText, CardHeader, CardBlock} from 'reactstrap';
-
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
 import Footer from './Footer';
 import Resume from './Resume';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    height: 140,
+    width: 100,
+  },
+  control: {
+    padding: theme.spacing(2),
+  },
+}));
 
 class Home extends Component {
   constructor() {
@@ -14,6 +28,7 @@ class Home extends Component {
     collapseProfessional: true,
     collapsePersonal: true
   }
+ 
   this.handleToggleResume = this.handleToggleResume.bind(this);
   this.toggleProfessional = this.toggleProfessional.bind(this);
   this.togglePersonal = this.togglePersonal.bind(this);
@@ -34,57 +49,57 @@ this.setState(prevState => ({
   showResume: !prevState.showResume
 }));
 
-render() {
-  return(
 
-    <Container>
-      <Row>
-      <Col md="1"></Col>
-        <Col md="4">
-          <div className="profile-view">
-          <Row>
-            <div className="avatar-row">
-              <img src="https://user-images.githubusercontent.com/25589910/88818074-47e46b00-d18c-11ea-8e3c-e90fa99b8622.jpg" width="360px" height="270px">
-              </img>
-            </div>
-          </Row>
-          <Row>
-            <Col md="1"></Col>
-            <Col md="4">
+render() {
+  const [spacing, setSpacing] = React.useState(2);
+  const classes = useStyles();
+
+  const handleChange = (event) => {
+    setSpacing(Number(event.target.value));
+
+  return(
+      <Grid container className={classes.root} spacing={2}>
+          <Grid item xs={12}>
+              <Grid container justify="center" spacing={spacing}>
+              {[0, 1, 2].map((value) => (
+                <Grid key={value} item>
+                     <div className="avatar-row">
+                      <img src="https://user-images.githubusercontent.com/25589910/88818074-47e46b00-d18c-11ea-8e3c-e90fa99b8622.jpg" width="360px" height="270px">
+                      </img>
+                    </div>
+                </Grid>
+              ))}
+            </Grid>
+          
+        
+          <Grid item xs={12}>
               <a href="https://www.linkedin.com/in/adamjweil/" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true" style={{marginBottom:"10px", opacity: .9}}>
                 <img src="https://user-images.githubusercontent.com/25589910/88818435-b3c6d380-d18c-11ea-8ec5-a399392334f6.png" width="20px" height="18px"  />
                 &nbsp;&nbsp;LinkedIn
               </a>
-            </Col>
-            <Col md="6">
+            
+    
               <a href="mailto:adamjweil@gmail.com" class="btn btn-sm btn-dark" role="button" aria-disabled="true" style={{marginBottom:"10px", opacity: .9}}>
                 <img src="https://user-images.githubusercontent.com/25589910/92648908-32e51680-f2b8-11ea-896e-29d568d259ae.png" width="20px" height="18px"  />
                 &nbsp;&nbsp;Email
               </a>
-            </Col>
-            <Row>
-            </Row>
-            <Col md="1"></Col>
-            <Col md="5">
+            
+      
               <a href="https://github.com/adamjweil" target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true" style={{opacity: .9}}>
                 <img src="https://user-images.githubusercontent.com/25589910/88818581-dd7ffa80-d18c-11ea-950b-6dd5f47d2d8e.png" width="24px" height="20px" />
                 &nbsp;&nbsp;GitHub&nbsp;
               </a>
-            </Col>
+            
 
-            <Col md="6">
+           
               <a onClick={this.handleToggleResume} target="_blank" class="btn btn-sm btn-dark" role="button" aria-disabled="true" style={{opacity: .9}}>
               <img src="https://user-images.githubusercontent.com/25589910/92650620-a556f600-f2ba-11ea-8ff0-02cdef8f5cc3.png" width="20px" height="18px" />
               <span style={{color: 'white'}}>  { this.state.showResume ? "Hide Résumé" : "Show Résumé" }</span>
               </a>
-            </Col>
-          </Row>
+         
 
-          <Row>
             <hr />
-          </Row>
-
-          <Row>
+  
             <p style={{fontSize: '18px', textDecoration: '', marginBottom: '0px', marginLeft: '10px'}}>
             <strong>SKILL SETS</strong>
             </p>
@@ -109,8 +124,7 @@ render() {
               <img src="https://user-images.githubusercontent.com/25589910/116759746-192c4700-a9e1-11eb-9232-d0e4142aa3e2.png" width="10px" height="15px" style={{}} />
               Fin-Tech
             </span>
-          </Row>
-          <Row>
+        
             <div className="strenths">
               <p style={{fontSize: '18px', textDecoration: '', marginBottom: '0px', marginLeft: '10px'}}>
                 <strong>STRENGTHS</strong>
@@ -125,12 +139,8 @@ render() {
               <p style={{marginBottom: '0px'}}><img src="https://user-images.githubusercontent.com/25589910/116758289-b9806c80-a9dd-11eb-9a57-1e050dc87980.png" width="10px" height="10px" style={{marginTop:"-3px"}} /> Organized, with a primary focus on overall productivity (including time and resource management, amoung others)</p>
               </div>
             </div>
-            </Row>
-          </div>
-          </Col>
-
-        <Col md="0"></Col>
-        <Col md="7">
+            </Grid>         
+    
         <Card style={{borderColor: '#DFDFE1', marginTop: "15px"}}>
           <CardHeader style={{ backgroundColor: '#6c757d', color: 'white', fontSize: '18px', fontWeight: '700', opacity: '.7'}}>
           <img src="https://user-images.githubusercontent.com/25589910/91918504-154cf700-ec91-11ea-9b75-68821a74f273.png" style={{ color: 'dark', height: "30px",  marginRight: "15px"}} />
@@ -229,24 +239,19 @@ render() {
               </Collapse>
 
             </CardBlock>
-          </Card>
-          </Col>
-         </Row>
-          <Row>
-            <Col>
+         
               {this.state.showResume ? <Resume /> : ""}
-            </Col>
-          </Row>
-         <Row style={{paddingTop: '30px',alignItems: 'center', textAlign: 'center'}}>
-          <Col md="12">
+     
           <footer>
             <span style={{}}> &copy; {new Date().getFullYear()} Copyright <a href="https://adamjweil.net"> AdamJWeil.net </a> <strong>-</strong> All Rights Reserved </span>
             </footer>
-          </Col>
-        </Row>
-    </Container>
-    );
-  }
+            </Card>
+        </Grid>
+    </Grid>
+      );
+          }
+
+}
 }
 
 export default Home;
