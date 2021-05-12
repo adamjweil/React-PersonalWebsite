@@ -13,6 +13,7 @@ import Education from './components/Education';
 import Interests from './components/Interests';
 import Footer from './components/Footer';
 import ProductMgr from './components/ProductMgr';
+import Personal from './components/Personal';
 
 class App extends Component {
   constructor() {
@@ -57,6 +58,7 @@ class App extends Component {
               <Route exact path="/edu" render={ () => <Education /> } />
               <Route exact path="/interests" render={ () => <Interests /> } />
               <Route exact path="/product-mgr" render={ () => <ProductMgr /> } />
+              <Route exact path="/personal" render={ () => <Personal /> } />
 
               {/*
                 <Route exact path="/contact" render={ () => <Contact /> } />
