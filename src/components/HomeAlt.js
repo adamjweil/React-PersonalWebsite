@@ -4,6 +4,7 @@ import { Label, Button , Row, Col, Container, Card, CardBody, Collapse, CardText
 
 import Footer from './Footer';
 import Resume from './Resume';
+import Video from './Video';
 
 class Home extends Component {
   constructor() {
@@ -137,6 +138,7 @@ render() {
             </div>
             </Row>
           </div>
+        
           </Col>
 
         <Col md="0"></Col>
@@ -243,9 +245,14 @@ render() {
           </Col>
          </Row>
           <Row>
-            <Col>
+            {/* <Col md="4"></Col> */}
+            <Col style={{alignItems: 'center'}}>
               {this.state.showResume ? <Resume /> : ""}
             </Col>
+            {/* <Col md="2"></Col> */}
+          </Row>
+          <Row style={{marginTop: '10px'}}>
+            <Video />
           </Row>
          <Row style={{paddingTop: '30px',alignItems: 'center', textAlign: 'center'}}>
           <Col md="12">
@@ -254,6 +261,8 @@ render() {
             </footer>
           </Col>
         </Row>
+
+      
     </Container>
     );
   }
